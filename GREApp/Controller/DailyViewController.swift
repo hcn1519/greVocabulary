@@ -18,7 +18,7 @@ class DailyViewController: UIViewController {
         super.viewDidLoad()
         
         resetAllRecords(in: "Day")
-//        generateTestData()
+        generateTestData()
         attempFetch()
     }
     

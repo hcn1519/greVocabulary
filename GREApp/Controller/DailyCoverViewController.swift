@@ -1,5 +1,5 @@
 //
-//  TestDetailViewController
+//  DailyCoverViewController.swift
 //  GREApp
 //
 //  Created by 홍창남 on 2017. 7. 16..
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class TestDetailViewController: UIViewController {
-
+class DailyCoverViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
