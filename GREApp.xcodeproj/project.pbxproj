@@ -8,22 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */; };
-		7E35C8CD1F1B4A2E00AE4092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8CC1F1B4A2E00AE4092 /* ViewController.swift */; };
+		7E35C8CD1F1B4A2E00AE4092 /* TestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8CC1F1B4A2E00AE4092 /* TestDetailViewController.swift */; };
 		7E35C8D01F1B4A2E00AE4092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E35C8CE1F1B4A2E00AE4092 /* Main.storyboard */; };
 		7E35C8D31F1B4A2E00AE4092 /* GREApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8D11F1B4A2E00AE4092 /* GREApp.xcdatamodeld */; };
 		7E35C8D51F1B4A2E00AE4092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E35C8D41F1B4A2E00AE4092 /* Assets.xcassets */; };
 		7E35C8D81F1B4A2E00AE4092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E35C8D61F1B4A2E00AE4092 /* LaunchScreen.storyboard */; };
+		7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */; };
+		7E35C8E31F1B4CA300AE4092 /* DailyTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8E21F1B4CA300AE4092 /* DailyTestCell.swift */; };
+		7E35C91F1F1B642100AE4092 /* WordScore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9171F1B642100AE4092 /* WordScore+CoreDataClass.swift */; };
+		7E35C9201F1B642100AE4092 /* WordScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9181F1B642100AE4092 /* WordScore+CoreDataProperties.swift */; };
+		7E35C9211F1B642100AE4092 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9191F1B642100AE4092 /* Day+CoreDataClass.swift */; };
+		7E35C9221F1B642100AE4092 /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C91A1F1B642100AE4092 /* Day+CoreDataProperties.swift */; };
+		7E35C9231F1B642100AE4092 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C91B1F1B642100AE4092 /* Word+CoreDataClass.swift */; };
+		7E35C9241F1B642100AE4092 /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C91C1F1B642100AE4092 /* Word+CoreDataProperties.swift */; };
+		7E35C9251F1B642100AE4092 /* Test+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C91D1F1B642100AE4092 /* Test+CoreDataClass.swift */; };
+		7E35C9261F1B642100AE4092 /* Test+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C91E1F1B642100AE4092 /* Test+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E35C8C71F1B4A2E00AE4092 /* GREApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GREApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E35C8CC1F1B4A2E00AE4092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E35C8CC1F1B4A2E00AE4092 /* TestDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDetailViewController.swift; sourceTree = "<group>"; };
 		7E35C8CF1F1B4A2E00AE4092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E35C8D21F1B4A2E00AE4092 /* GREApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GREApp.xcdatamodel; sourceTree = "<group>"; };
 		7E35C8D41F1B4A2E00AE4092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E35C8D71F1B4A2E00AE4092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E35C8D91F1B4A2E00AE4092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		7E35C8E21F1B4CA300AE4092 /* DailyTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTestCell.swift; sourceTree = "<group>"; };
+		7E35C9171F1B642100AE4092 /* WordScore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordScore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E35C9181F1B642100AE4092 /* WordScore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E35C9191F1B642100AE4092 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E35C91A1F1B642100AE4092 /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E35C91B1F1B642100AE4092 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E35C91C1F1B642100AE4092 /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E35C91D1F1B642100AE4092 /* Test+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E35C91E1F1B642100AE4092 /* Test+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,49 @@
 		7E35C8C91F1B4A2E00AE4092 /* GREApp */ = {
 			isa = PBXGroup;
 			children = (
-				7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */,
-				7E35C8CC1F1B4A2E00AE4092 /* ViewController.swift */,
+				7E35C9061F1B57FA00AE4092 /* Model */,
 				7E35C8CE1F1B4A2E00AE4092 /* Main.storyboard */,
 				7E35C8D41F1B4A2E00AE4092 /* Assets.xcassets */,
 				7E35C8D61F1B4A2E00AE4092 /* LaunchScreen.storyboard */,
 				7E35C8D91F1B4A2E00AE4092 /* Info.plist */,
+				7E35C8E41F1B4CA600AE4092 /* View */,
+				7E35C8E11F1B4C8C00AE4092 /* Controller */,
+				7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */,
 				7E35C8D11F1B4A2E00AE4092 /* GREApp.xcdatamodeld */,
 			);
 			path = GREApp;
+			sourceTree = "<group>";
+		};
+		7E35C8E11F1B4C8C00AE4092 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7E35C8CC1F1B4A2E00AE4092 /* TestDetailViewController.swift */,
+				7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7E35C8E41F1B4CA600AE4092 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E35C8E21F1B4CA300AE4092 /* DailyTestCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E35C9061F1B57FA00AE4092 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E35C9171F1B642100AE4092 /* WordScore+CoreDataClass.swift */,
+				7E35C9181F1B642100AE4092 /* WordScore+CoreDataProperties.swift */,
+				7E35C9191F1B642100AE4092 /* Day+CoreDataClass.swift */,
+				7E35C91A1F1B642100AE4092 /* Day+CoreDataProperties.swift */,
+				7E35C91B1F1B642100AE4092 /* Word+CoreDataClass.swift */,
+				7E35C91C1F1B642100AE4092 /* Word+CoreDataProperties.swift */,
+				7E35C91D1F1B642100AE4092 /* Test+CoreDataClass.swift */,
+				7E35C91E1F1B642100AE4092 /* Test+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +192,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E35C8CD1F1B4A2E00AE4092 /* ViewController.swift in Sources */,
+				7E35C91F1F1B642100AE4092 /* WordScore+CoreDataClass.swift in Sources */,
+				7E35C9241F1B642100AE4092 /* Word+CoreDataProperties.swift in Sources */,
+				7E35C9231F1B642100AE4092 /* Word+CoreDataClass.swift in Sources */,
+				7E35C9261F1B642100AE4092 /* Test+CoreDataProperties.swift in Sources */,
+				7E35C9251F1B642100AE4092 /* Test+CoreDataClass.swift in Sources */,
+				7E35C8CD1F1B4A2E00AE4092 /* TestDetailViewController.swift in Sources */,
 				7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */,
+				7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */,
+				7E35C9211F1B642100AE4092 /* Day+CoreDataClass.swift in Sources */,
+				7E35C9221F1B642100AE4092 /* Day+CoreDataProperties.swift in Sources */,
 				7E35C8D31F1B4A2E00AE4092 /* GREApp.xcdatamodeld in Sources */,
+				7E35C9201F1B642100AE4092 /* WordScore+CoreDataProperties.swift in Sources */,
+				7E35C8E31F1B4CA300AE4092 /* DailyTestCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
