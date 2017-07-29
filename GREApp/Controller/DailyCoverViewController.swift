@@ -8,10 +8,17 @@
 
 import UIKit
 
+// Learning Day 1 페이지
 class DailyCoverViewController: UIViewController {
+    
+    var date: Int?
+    
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = "Learning Day \(date!)"
     }
 }
 

@@ -15,17 +15,29 @@
 		7E35C8D81F1B4A2E00AE4092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E35C8D61F1B4A2E00AE4092 /* LaunchScreen.storyboard */; };
 		7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */; };
 		7E35C8E31F1B4CA300AE4092 /* DailyTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8E21F1B4CA300AE4092 /* DailyTestCell.swift */; };
-		7E35C91F1F1B642100AE4092 /* WordScore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9171F1B642100AE4092 /* WordScore+CoreDataClass.swift */; };
-		7E35C9201F1B642100AE4092 /* WordScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9181F1B642100AE4092 /* WordScore+CoreDataProperties.swift */; };
-		7E35C9211F1B642100AE4092 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9191F1B642100AE4092 /* Day+CoreDataClass.swift */; };
-		7E35C9221F1B642100AE4092 /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C91A1F1B642100AE4092 /* Day+CoreDataProperties.swift */; };
-		7E35C9231F1B642100AE4092 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C91B1F1B642100AE4092 /* Word+CoreDataClass.swift */; };
-		7E35C9241F1B642100AE4092 /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C91C1F1B642100AE4092 /* Word+CoreDataProperties.swift */; };
-		7E35C9251F1B642100AE4092 /* Test+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C91D1F1B642100AE4092 /* Test+CoreDataClass.swift */; };
-		7E35C9261F1B642100AE4092 /* Test+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C91E1F1B642100AE4092 /* Test+CoreDataProperties.swift */; };
 		7E35C9281F1B6F2000AE4092 /* DailyCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9271F1B6F2000AE4092 /* DailyCoverViewController.swift */; };
 		7E35C92A1F1B6FB300AE4092 /* DailyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9291F1B6FB300AE4092 /* DailyPageViewController.swift */; };
+		7EE109521F2C7E8B00920C50 /* GREAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109511F2C7E8B00920C50 /* GREAppTests.swift */; };
+		7EE109621F2C819000920C50 /* Test+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095A1F2C819000920C50 /* Test+CoreDataClass.swift */; };
+		7EE109631F2C819000920C50 /* Test+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095B1F2C819000920C50 /* Test+CoreDataProperties.swift */; };
+		7EE109641F2C819000920C50 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095C1F2C819000920C50 /* Word+CoreDataClass.swift */; };
+		7EE109651F2C819000920C50 /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095D1F2C819000920C50 /* Word+CoreDataProperties.swift */; };
+		7EE109661F2C819000920C50 /* WordScore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095E1F2C819000920C50 /* WordScore+CoreDataClass.swift */; };
+		7EE109671F2C819000920C50 /* WordScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095F1F2C819000920C50 /* WordScore+CoreDataProperties.swift */; };
+		7EE109681F2C819000920C50 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109601F2C819000920C50 /* Day+CoreDataClass.swift */; };
+		7EE109691F2C819000920C50 /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109611F2C819000920C50 /* Day+CoreDataProperties.swift */; };
+		7EE1096B1F2CAD8400920C50 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1096A1F2CAD8400920C50 /* csv.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EE109541F2C7E8B00920C50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E35C8BF1F1B4A2E00AE4092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E35C8C61F1B4A2E00AE4092;
+			remoteInfo = GREApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7E35C8C71F1B4A2E00AE4092 /* GREApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GREApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,20 +50,31 @@
 		7E35C8D91F1B4A2E00AE4092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		7E35C8E21F1B4CA300AE4092 /* DailyTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTestCell.swift; sourceTree = "<group>"; };
-		7E35C9171F1B642100AE4092 /* WordScore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordScore+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7E35C9181F1B642100AE4092 /* WordScore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7E35C9191F1B642100AE4092 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7E35C91A1F1B642100AE4092 /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7E35C91B1F1B642100AE4092 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7E35C91C1F1B642100AE4092 /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7E35C91D1F1B642100AE4092 /* Test+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7E35C91E1F1B642100AE4092 /* Test+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7E35C9271F1B6F2000AE4092 /* DailyCoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCoverViewController.swift; sourceTree = "<group>"; };
 		7E35C9291F1B6FB300AE4092 /* DailyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPageViewController.swift; sourceTree = "<group>"; };
+		7EE1094F1F2C7E8B00920C50 /* GREAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GREAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE109511F2C7E8B00920C50 /* GREAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GREAppTests.swift; sourceTree = "<group>"; };
+		7EE109531F2C7E8B00920C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EE1095A1F2C819000920C50 /* Test+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Test+CoreDataClass.swift"; path = "../../Test+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7EE1095B1F2C819000920C50 /* Test+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Test+CoreDataProperties.swift"; path = "../../Test+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7EE1095C1F2C819000920C50 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Word+CoreDataClass.swift"; path = "../../Word+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7EE1095D1F2C819000920C50 /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Word+CoreDataProperties.swift"; path = "../../Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7EE1095E1F2C819000920C50 /* WordScore+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WordScore+CoreDataClass.swift"; path = "../../WordScore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7EE1095F1F2C819000920C50 /* WordScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WordScore+CoreDataProperties.swift"; path = "../../WordScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7EE109601F2C819000920C50 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day+CoreDataClass.swift"; path = "../../Day+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7EE109611F2C819000920C50 /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day+CoreDataProperties.swift"; path = "../../Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7EE1096A1F2CAD8400920C50 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7E35C8C41F1B4A2E00AE4092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EE1094C1F2C7E8B00920C50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				7E35C8C91F1B4A2E00AE4092 /* GREApp */,
+				7EE109501F2C7E8B00920C50 /* GREAppTests */,
 				7E35C8C81F1B4A2E00AE4092 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				7E35C8C71F1B4A2E00AE4092 /* GREApp.app */,
+				7EE1094F1F2C7E8B00920C50 /* GREAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +105,8 @@
 		7E35C8C91F1B4A2E00AE4092 /* GREApp */ = {
 			isa = PBXGroup;
 			children = (
+				7EE1096D1F2CAE9D00920C50 /* Resources */,
+				7EE1096C1F2CAD8D00920C50 /* Helper/Utilities */,
 				7E35C9061F1B57FA00AE4092 /* Model */,
 				7E35C8CE1F1B4A2E00AE4092 /* Main.storyboard */,
 				7E35C8D41F1B4A2E00AE4092 /* Assets.xcassets */,
@@ -96,8 +123,8 @@
 		7E35C8E11F1B4C8C00AE4092 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7E35C8CC1F1B4A2E00AE4092 /* DailyDetailViewController.swift */,
 				7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */,
+				7E35C8CC1F1B4A2E00AE4092 /* DailyDetailViewController.swift */,
 				7E35C9271F1B6F2000AE4092 /* DailyCoverViewController.swift */,
 				7E35C9291F1B6FB300AE4092 /* DailyPageViewController.swift */,
 			);
@@ -115,16 +142,48 @@
 		7E35C9061F1B57FA00AE4092 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7E35C9171F1B642100AE4092 /* WordScore+CoreDataClass.swift */,
-				7E35C9181F1B642100AE4092 /* WordScore+CoreDataProperties.swift */,
-				7E35C9191F1B642100AE4092 /* Day+CoreDataClass.swift */,
-				7E35C91A1F1B642100AE4092 /* Day+CoreDataProperties.swift */,
-				7E35C91B1F1B642100AE4092 /* Word+CoreDataClass.swift */,
-				7E35C91C1F1B642100AE4092 /* Word+CoreDataProperties.swift */,
-				7E35C91D1F1B642100AE4092 /* Test+CoreDataClass.swift */,
-				7E35C91E1F1B642100AE4092 /* Test+CoreDataProperties.swift */,
+				7EE1095A1F2C819000920C50 /* Test+CoreDataClass.swift */,
+				7EE1095C1F2C819000920C50 /* Word+CoreDataClass.swift */,
+				7EE1095E1F2C819000920C50 /* WordScore+CoreDataClass.swift */,
+				7EE109601F2C819000920C50 /* Day+CoreDataClass.swift */,
+				7EE109591F2C806E00920C50 /* Core Data */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7EE109501F2C7E8B00920C50 /* GREAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EE109511F2C7E8B00920C50 /* GREAppTests.swift */,
+				7EE109531F2C7E8B00920C50 /* Info.plist */,
+			);
+			path = GREAppTests;
+			sourceTree = "<group>";
+		};
+		7EE109591F2C806E00920C50 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				7EE1095B1F2C819000920C50 /* Test+CoreDataProperties.swift */,
+				7EE1095D1F2C819000920C50 /* Word+CoreDataProperties.swift */,
+				7EE1095F1F2C819000920C50 /* WordScore+CoreDataProperties.swift */,
+				7EE109611F2C819000920C50 /* Day+CoreDataProperties.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		7EE1096C1F2CAD8D00920C50 /* Helper/Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7EE1096A1F2CAD8400920C50 /* csv.swift */,
+			);
+			name = Helper/Utilities;
+			sourceTree = "<group>";
+		};
+		7EE1096D1F2CAE9D00920C50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,18 +206,41 @@
 			productReference = 7E35C8C71F1B4A2E00AE4092 /* GREApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7EE1094E1F2C7E8B00920C50 /* GREAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EE109581F2C7E8B00920C50 /* Build configuration list for PBXNativeTarget "GREAppTests" */;
+			buildPhases = (
+				7EE1094B1F2C7E8B00920C50 /* Sources */,
+				7EE1094C1F2C7E8B00920C50 /* Frameworks */,
+				7EE1094D1F2C7E8B00920C50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EE109551F2C7E8B00920C50 /* PBXTargetDependency */,
+			);
+			name = GREAppTests;
+			productName = GREAppTests;
+			productReference = 7EE1094F1F2C7E8B00920C50 /* GREAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7E35C8BF1F1B4A2E00AE4092 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "홍창남";
 				TargetAttributes = {
 					7E35C8C61F1B4A2E00AE4092 = {
 						CreatedOnToolsVersion = 9.0;
+					};
+					7EE1094E1F2C7E8B00920C50 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E35C8C61F1B4A2E00AE4092;
 					};
 				};
 			};
@@ -176,6 +258,7 @@
 			projectRoot = "";
 			targets = (
 				7E35C8C61F1B4A2E00AE4092 /* GREApp */,
+				7EE1094E1F2C7E8B00920C50 /* GREAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,6 +274,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EE1094D1F2C7E8B00920C50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -198,25 +288,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E35C91F1F1B642100AE4092 /* WordScore+CoreDataClass.swift in Sources */,
-				7E35C9241F1B642100AE4092 /* Word+CoreDataProperties.swift in Sources */,
-				7E35C9231F1B642100AE4092 /* Word+CoreDataClass.swift in Sources */,
-				7E35C9261F1B642100AE4092 /* Test+CoreDataProperties.swift in Sources */,
-				7E35C9251F1B642100AE4092 /* Test+CoreDataClass.swift in Sources */,
+				7EE1096B1F2CAD8400920C50 /* csv.swift in Sources */,
+				7EE109661F2C819000920C50 /* WordScore+CoreDataClass.swift in Sources */,
 				7E35C8CD1F1B4A2E00AE4092 /* DailyDetailViewController.swift in Sources */,
+				7EE109651F2C819000920C50 /* Word+CoreDataProperties.swift in Sources */,
+				7EE109641F2C819000920C50 /* Word+CoreDataClass.swift in Sources */,
 				7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */,
+				7EE109671F2C819000920C50 /* WordScore+CoreDataProperties.swift in Sources */,
 				7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */,
-				7E35C9211F1B642100AE4092 /* Day+CoreDataClass.swift in Sources */,
-				7E35C9221F1B642100AE4092 /* Day+CoreDataProperties.swift in Sources */,
+				7EE109631F2C819000920C50 /* Test+CoreDataProperties.swift in Sources */,
+				7EE109691F2C819000920C50 /* Day+CoreDataProperties.swift in Sources */,
 				7E35C9281F1B6F2000AE4092 /* DailyCoverViewController.swift in Sources */,
 				7E35C8D31F1B4A2E00AE4092 /* GREApp.xcdatamodeld in Sources */,
 				7E35C92A1F1B6FB300AE4092 /* DailyPageViewController.swift in Sources */,
-				7E35C9201F1B642100AE4092 /* WordScore+CoreDataProperties.swift in Sources */,
 				7E35C8E31F1B4CA300AE4092 /* DailyTestCell.swift in Sources */,
+				7EE109681F2C819000920C50 /* Day+CoreDataClass.swift in Sources */,
+				7EE109621F2C819000920C50 /* Test+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EE1094B1F2C7E8B00920C50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EE109521F2C7E8B00920C50 /* GREAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EE109551F2C7E8B00920C50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E35C8C61F1B4A2E00AE4092 /* GREApp */;
+			targetProxy = 7EE109541F2C7E8B00920C50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7E35C8CE1F1B4A2E00AE4092 /* Main.storyboard */ = {
@@ -284,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -347,10 +454,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W6XUQ3PPN9;
 				INFOPLIST_FILE = GREApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -361,11 +469,48 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W6XUQ3PPN9;
 				INFOPLIST_FILE = GREApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7EE109561F2C7E8B00920C50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = W6XUQ3PPN9;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				INFOPLIST_FILE = GREAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GREApp.app/GREApp";
+			};
+			name = Debug;
+		};
+		7EE109571F2C7E8B00920C50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = W6XUQ3PPN9;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				INFOPLIST_FILE = GREAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GREApp.app/GREApp";
 			};
 			name = Release;
 		};
@@ -386,6 +531,15 @@
 			buildConfigurations = (
 				7E35C8DD1F1B4A2E00AE4092 /* Debug */,
 				7E35C8DE1F1B4A2E00AE4092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EE109581F2C7E8B00920C50 /* Build configuration list for PBXNativeTarget "GREAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EE109561F2C7E8B00920C50 /* Debug */,
+				7EE109571F2C7E8B00920C50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

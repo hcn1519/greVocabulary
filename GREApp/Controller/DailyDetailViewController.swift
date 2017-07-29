@@ -10,11 +10,25 @@ import UIKit
 
 class DailyDetailViewController: UIViewController {
     
+    var parentController: DailyPageViewController?
     var pageIndex: Int = 0
+    var word: Word?
+    var wordScore: WordScore?
+    var backgroundShouldChange = true
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var meaningLabel: UILabel!
+    @IBOutlet weak var alreadyKnowButton: UIButton!
+    @IBOutlet weak var notAlreadyKnowButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = word?.title
     }
+    
+    // 배우기를 취소하고 돌아가기
     @IBAction func closeBtnTapped(_ sender: UIButton) {
         
         let alert: UIAlertController = UIAlertController(title: "돌아가기", message: "여기서 끝낼 경우 오늘의 단어가 완료되지 않습니다.", preferredStyle: .alert)
@@ -32,5 +46,43 @@ class DailyDetailViewController: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
+    
+    // 뜻 보여주기
+    @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
+        
+        if backgroundShouldChange {
+            
+            meaningLabel.text = word?.meaning
+            meaningLabel.font = UIFont(name: "Helvetica Neue", size: 17)
+            meaningLabel.textColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1.0)
+            
+            alreadyKnowButton.isHidden = false
+            notAlreadyKnowButton.isHidden = false
+            
+            UIView.transition(with: self.view, duration: 0.25, options: .transitionCrossDissolve, animations: {
+                [weak self] in
+                self?.view.layoutIfNeeded()
+            }, completion: nil)
+            
+            backgroundShouldChange = false
+        }
+    }
+    @IBAction func alreadyKnowBtnTapped(_ sender: UIButton) {
+        saveScore(isKnow: true)
+        parentController?.goToNextPage()
+    }
+    @IBAction func notAlreadyKnowBtnTapped(_ sender: UIButton) {
+        saveScore(isKnow: false)
+        parentController?.goToNextPage()
+    }
+    
+    func saveScore(isKnow: Bool) {
+        if isKnow {
+            wordScore?.correctCount += 1
+        } else {
+            wordScore?.wrongCount += 1
+        }
+        
+        ad.saveContext()
+    }
 }
-

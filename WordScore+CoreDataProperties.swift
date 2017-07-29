@@ -2,9 +2,8 @@
 //  WordScore+CoreDataProperties.swift
 //  GREApp
 //
-//  Created by 홍창남 on 2017. 7. 16..
+//  Created by 홍창남 on 2017. 7. 29..
 //  Copyright © 2017년 홍창남. All rights reserved.
-//
 //
 
 import Foundation
@@ -17,9 +16,9 @@ extension WordScore {
         return NSFetchRequest<WordScore>(entityName: "WordScore")
     }
 
-    @NSManaged public var wrongCount: Int16
     @NSManaged public var correctCount: Int16
     @NSManaged public var wordScoreId: Int16
+    @NSManaged public var wrongCount: Int16
     @NSManaged public var toWord: Word?
 
 }

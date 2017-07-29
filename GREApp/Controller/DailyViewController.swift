@@ -14,50 +14,14 @@ class DailyViewController: UIViewController {
     
     var controller: NSFetchedResultsController<Day>!
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         resetAllRecords(in: "Day")
         generateTestData()
         attempFetch()
-    }
-    
-    func generateTestData() {
-        
-        let day1 = Day(context: context)
-        
-        day1.dayId = 1
-        day1.dateNumber = 1
-        day1.isFinished = false
-        
-        let day2 = Day(context: context)
-        
-        day2.dayId = 2
-        day2.dateNumber = 2
-        day2.isFinished = false
-        
-        let day3 = Day(context: context)
-        
-        day3.dayId = 3
-        day3.dateNumber = 3
-        day3.isFinished = false
-        
-        ad.saveContext()
-    }
-    
-    func resetAllRecords(in entity : String) // entity = Your_Entity_Name
-    {
-        
-        let context = ( UIApplication.shared.delegate as! AppDelegate ).persistentContainer.viewContext
-        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
-        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
-        do {
-            try context.execute(deleteRequest)
-            try context.save()
-        }
-        catch {
-            print ("There was an error")
-        }
     }
     
     // data를 fetching하는 작업
@@ -83,7 +47,8 @@ class DailyViewController: UIViewController {
     }
 }
 
-extension DailyViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+// MARK: DataSource
+extension DailyViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let sections = controller.sections {
             let sectionInfo = sections[section]
@@ -99,5 +64,64 @@ extension DailyViewController: UICollectionViewDelegate, UICollectionViewDataSou
         cell.configureCell(day: item)
         
         return cell
+    }
+    
+    
+}
+
+// MARK: segue 데이터 전송
+extension DailyViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "dailyToCover", sender: indexPath.row + 1)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "dailyToCover" {
+            if let destination = segue.destination as? DailyCoverViewController {
+                
+                destination.date = sender as? Int
+            }
+        }
+    }
+}
+
+// MARK: test 데이터 생성
+extension DailyViewController {
+    
+    func generateTestData() {
+        
+        let day1 = Day(context: context)
+        
+        day1.dayId = 1
+        day1.dateNumber = 1
+        day1.isFinished = false
+        
+        let day2 = Day(context: context)
+        
+        day2.dayId = 2
+        day2.dateNumber = 2
+        day2.isFinished = false
+        
+        let day3 = Day(context: context)
+        
+        day3.dayId = 3
+        day3.dateNumber = 3
+        day3.isFinished = false
+        
+        ad.saveContext()
+    }
+    
+    func resetAllRecords(in entity : String) {
+        
+        let context = ( UIApplication.shared.delegate as! AppDelegate ).persistentContainer.viewContext
+        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
+        do {
+            try context.execute(deleteRequest)
+            try context.save()
+        }
+        catch {
+            print ("There was an error")
+        }
     }
 }
