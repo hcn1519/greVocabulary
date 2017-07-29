@@ -14,9 +14,8 @@ class DailyTestCell: UICollectionViewCell {
     required init?(coder aDecoder:NSCoder){
         super.init(coder: aDecoder)
         
-        layer.backgroundColor = UIColor(red: 41/255, green: 98/255, blue: 255/255, alpha: 1.0).cgColor
         layer.cornerRadius = 5.0
-        
+        layer.borderColor = UIColor.clear.cgColor
     }
     
     func configureCell(day: Day) {
@@ -25,7 +24,7 @@ class DailyTestCell: UICollectionViewCell {
         if day.isFinished {
             layer.backgroundColor = UIColor(red: 41/255, green: 98/255, blue: 255/255, alpha: 1.0).cgColor
         } else {
-            layer.backgroundColor = UIColor(red: 158/255, green: 158/255, blue: 158/255, alpha: 1.0).cgColor
+            layer.backgroundColor = UIColor(red: 248/255, green: 204/255, blue: 180/255, alpha: 1.0).cgColor
         }
     }
     

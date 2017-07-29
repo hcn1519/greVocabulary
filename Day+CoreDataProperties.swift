@@ -2,9 +2,8 @@
 //  Day+CoreDataProperties.swift
 //  GREApp
 //
-//  Created by 홍창남 on 2017. 7. 16..
+//  Created by 홍창남 on 2017. 7. 29..
 //  Copyright © 2017년 홍창남. All rights reserved.
-//
 //
 
 import Foundation
@@ -17,8 +16,8 @@ extension Day {
         return NSFetchRequest<Day>(entityName: "Day")
     }
 
-    @NSManaged public var dayId: Int16
     @NSManaged public var dateNumber: Int16
+    @NSManaged public var dayId: Int16
     @NSManaged public var isFinished: Bool
     @NSManaged public var toWord: NSSet?
 
