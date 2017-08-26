@@ -21,11 +21,11 @@
 		7EE109621F2C819000920C50 /* Test+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095A1F2C819000920C50 /* Test+CoreDataClass.swift */; };
 		7EE109631F2C819000920C50 /* Test+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095B1F2C819000920C50 /* Test+CoreDataProperties.swift */; };
 		7EE109641F2C819000920C50 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095C1F2C819000920C50 /* Word+CoreDataClass.swift */; };
-		7EE109651F2C819000920C50 /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095D1F2C819000920C50 /* Word+CoreDataProperties.swift */; };
+		7EE109651F2C819000920C50 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095D1F2C819000920C50 /* Word+CoreDataClass.swift */; };
 		7EE109661F2C819000920C50 /* WordScore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095E1F2C819000920C50 /* WordScore+CoreDataClass.swift */; };
 		7EE109671F2C819000920C50 /* WordScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095F1F2C819000920C50 /* WordScore+CoreDataProperties.swift */; };
 		7EE109681F2C819000920C50 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109601F2C819000920C50 /* Day+CoreDataClass.swift */; };
-		7EE109691F2C819000920C50 /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109611F2C819000920C50 /* Day+CoreDataProperties.swift */; };
+		7EE109691F2C819000920C50 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109611F2C819000920C50 /* Day+CoreDataClass.swift */; };
 		7EE1096B1F2CAD8400920C50 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1096A1F2CAD8400920C50 /* csv.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,14 +55,14 @@
 		7EE1094F1F2C7E8B00920C50 /* GREAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GREAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE109511F2C7E8B00920C50 /* GREAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GREAppTests.swift; sourceTree = "<group>"; };
 		7EE109531F2C7E8B00920C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EE1095A1F2C819000920C50 /* Test+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Test+CoreDataClass.swift"; path = "../../Test+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7EE1095B1F2C819000920C50 /* Test+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Test+CoreDataProperties.swift"; path = "../../Test+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7EE1095C1F2C819000920C50 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Word+CoreDataClass.swift"; path = "../../Word+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7EE1095D1F2C819000920C50 /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Word+CoreDataProperties.swift"; path = "../../Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7EE1095E1F2C819000920C50 /* WordScore+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WordScore+CoreDataClass.swift"; path = "../../WordScore+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7EE1095F1F2C819000920C50 /* WordScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WordScore+CoreDataProperties.swift"; path = "../../WordScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7EE109601F2C819000920C50 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day+CoreDataClass.swift"; path = "../../Day+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7EE109611F2C819000920C50 /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day+CoreDataProperties.swift"; path = "../../Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7EE1095A1F2C819000920C50 /* Test+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7EE1095B1F2C819000920C50 /* Test+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7EE1095C1F2C819000920C50 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7EE1095D1F2C819000920C50 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Word+CoreDataClass.swift"; path = "../Word+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7EE1095E1F2C819000920C50 /* WordScore+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WordScore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7EE1095F1F2C819000920C50 /* WordScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WordScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7EE109601F2C819000920C50 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7EE109611F2C819000920C50 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day+CoreDataClass.swift"; path = "../Day+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7EE1096A1F2CAD8400920C50 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,17 +105,14 @@
 		7E35C8C91F1B4A2E00AE4092 /* GREApp */ = {
 			isa = PBXGroup;
 			children = (
+				7EAD4E1C1F51B1DA007A5CF1 /* Supporting Files */,
 				7EE1096D1F2CAE9D00920C50 /* Resources */,
 				7EE1096C1F2CAD8D00920C50 /* Helper/Utilities */,
 				7E35C9061F1B57FA00AE4092 /* Model */,
 				7E35C8CE1F1B4A2E00AE4092 /* Main.storyboard */,
-				7E35C8D41F1B4A2E00AE4092 /* Assets.xcassets */,
 				7E35C8D61F1B4A2E00AE4092 /* LaunchScreen.storyboard */,
-				7E35C8D91F1B4A2E00AE4092 /* Info.plist */,
 				7E35C8E41F1B4CA600AE4092 /* View */,
 				7E35C8E11F1B4C8C00AE4092 /* Controller */,
-				7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */,
-				7E35C8D11F1B4A2E00AE4092 /* GREApp.xcdatamodeld */,
 			);
 			path = GREApp;
 			sourceTree = "<group>";
@@ -151,6 +148,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7EAD4E1C1F51B1DA007A5CF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E35C8D91F1B4A2E00AE4092 /* Info.plist */,
+				7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */,
+				7E35C8D11F1B4A2E00AE4092 /* GREApp.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7EE109501F2C7E8B00920C50 /* GREAppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,11 +171,11 @@
 			isa = PBXGroup;
 			children = (
 				7EE1095B1F2C819000920C50 /* Test+CoreDataProperties.swift */,
-				7EE1095D1F2C819000920C50 /* Word+CoreDataProperties.swift */,
+				7EE1095D1F2C819000920C50 /* Word+CoreDataClass.swift */,
 				7EE1095F1F2C819000920C50 /* WordScore+CoreDataProperties.swift */,
-				7EE109611F2C819000920C50 /* Day+CoreDataProperties.swift */,
+				7EE109611F2C819000920C50 /* Day+CoreDataClass.swift */,
 			);
-			name = "Core Data";
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 		7EE1096C1F2CAD8D00920C50 /* Helper/Utilities */ = {
@@ -182,6 +189,7 @@
 		7EE1096D1F2CAE9D00920C50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7E35C8D41F1B4A2E00AE4092 /* Assets.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -291,13 +299,13 @@
 				7EE1096B1F2CAD8400920C50 /* csv.swift in Sources */,
 				7EE109661F2C819000920C50 /* WordScore+CoreDataClass.swift in Sources */,
 				7E35C8CD1F1B4A2E00AE4092 /* DailyDetailViewController.swift in Sources */,
-				7EE109651F2C819000920C50 /* Word+CoreDataProperties.swift in Sources */,
+				7EE109651F2C819000920C50 /* Word+CoreDataClass.swift in Sources */,
 				7EE109641F2C819000920C50 /* Word+CoreDataClass.swift in Sources */,
 				7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */,
 				7EE109671F2C819000920C50 /* WordScore+CoreDataProperties.swift in Sources */,
 				7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */,
 				7EE109631F2C819000920C50 /* Test+CoreDataProperties.swift in Sources */,
-				7EE109691F2C819000920C50 /* Day+CoreDataProperties.swift in Sources */,
+				7EE109691F2C819000920C50 /* Day+CoreDataClass.swift in Sources */,
 				7E35C9281F1B6F2000AE4092 /* DailyCoverViewController.swift in Sources */,
 				7E35C8D31F1B4A2E00AE4092 /* GREApp.xcdatamodeld in Sources */,
 				7E35C92A1F1B6FB300AE4092 /* DailyPageViewController.swift in Sources */,
@@ -542,6 +550,7 @@
 				7EE109571F2C7E8B00920C50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

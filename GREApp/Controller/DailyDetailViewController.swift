@@ -22,12 +22,19 @@ class DailyDetailViewController: UIViewController {
     @IBOutlet weak var alreadyKnowButton: UIButton!
     @IBOutlet weak var notAlreadyKnowButton: UIButton!
     
+    @IBOutlet weak var btnBottomConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text = word?.title
     }
-    
+
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
+
+        btnBottomConstraint.constant = self.view.bounds.height / 5
+    }
+
     // 배우기를 취소하고 돌아가기
     @IBAction func closeBtnTapped(_ sender: UIButton) {
         

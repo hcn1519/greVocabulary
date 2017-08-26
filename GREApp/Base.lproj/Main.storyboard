@@ -213,11 +213,11 @@
                             <constraint firstItem="3K0-0n-uGo" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="EZP-nS-cfW"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="HG8-UW-b3v"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3K0-0n-uGo" secondAttribute="trailing" constant="8" id="MVT-Vb-Kjj"/>
-                            <constraint firstItem="c0u-rg-FAl" firstAttribute="top" secondItem="3K0-0n-uGo" secondAttribute="bottom" constant="125" id="STR-OG-yvr"/>
                             <constraint firstItem="hc1-VM-VB5" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leading" constant="16" id="THT-PH-9rs"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerY" secondItem="wuv-m3-fhD" secondAttribute="centerY" constant="-16" id="aa3-sa-Zll"/>
                             <constraint firstItem="hc1-VM-VB5" firstAttribute="top" secondItem="qCg-of-1TX" secondAttribute="bottom" constant="16" id="ehs-Hh-ecM"/>
                             <constraint firstItem="3K0-0n-uGo" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="8" id="iDJ-Qq-Y0I"/>
+                            <constraint firstItem="c0u-rg-FAl" firstAttribute="top" secondItem="3K0-0n-uGo" secondAttribute="bottom" constant="125" id="lTn-kJ-bm2"/>
                             <constraint firstItem="0QS-kg-zwp" firstAttribute="centerY" secondItem="wuv-m3-fhD" secondAttribute="centerY" constant="16" id="ljG-3T-9fg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0QS-kg-zwp" secondAttribute="trailing" constant="16" id="zaS-oj-xku"/>
                         </constraints>
@@ -227,6 +227,7 @@
                     </view>
                     <connections>
                         <outlet property="alreadyKnowButton" destination="YeW-At-c68" id="oRZ-5x-AxC"/>
+                        <outlet property="btnBottomConstraint" destination="lTn-kJ-bm2" id="577-9Y-QHJ"/>
                         <outlet property="meaningLabel" destination="0QS-kg-zwp" id="KiS-xd-Z09"/>
                         <outlet property="notAlreadyKnowButton" destination="UHw-7e-DMK" id="2bU-UR-fk5"/>
                         <outlet property="titleLabel" destination="eTG-b9-mTn" id="jPp-du-2Ma"/>
