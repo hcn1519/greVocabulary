@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-GREApp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GREAppTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2D0D365BAF3EC03664F8B3F35C6EFD4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>551F184743ECFAC3A78FADB899EC47AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA3652C253E84EB5D8BB5EC2D400F8E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F7637DFB131EAD4A01B9ED7A4DA61B41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -116,7 +116,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="시작하기"/>
                                         <connections>
-                                            <segue destination="beu-02-FO5" kind="presentation" id="uGb-86-Azc"/>
+                                            <segue destination="beu-02-FO5" kind="presentation" identifier="dayStartSegue" id="uGb-86-Azc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -168,13 +168,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abalone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTG-b9-mTn">
-                                <rect key="frame" x="32" y="302" width="311" height="31.5"/>
+                                <rect key="frame" x="32" y="302.5" width="311" height="31.5"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화면을 탭하면 뜻이 나옵니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QS-kg-zwp">
-                                <rect key="frame" x="32" y="340.5" width="311" height="18"/>
+                                <rect key="frame" x="32" y="341" width="311" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -212,12 +212,12 @@
                             <constraint firstItem="0QS-kg-zwp" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="16" id="9lM-ss-lUl"/>
                             <constraint firstItem="3K0-0n-uGo" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="EZP-nS-cfW"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="HG8-UW-b3v"/>
+                            <constraint firstItem="c0u-rg-FAl" firstAttribute="top" secondItem="3K0-0n-uGo" secondAttribute="bottom" constant="125" id="ITm-qQ-Lbr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3K0-0n-uGo" secondAttribute="trailing" constant="8" id="MVT-Vb-Kjj"/>
                             <constraint firstItem="hc1-VM-VB5" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leading" constant="16" id="THT-PH-9rs"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerY" secondItem="wuv-m3-fhD" secondAttribute="centerY" constant="-16" id="aa3-sa-Zll"/>
                             <constraint firstItem="hc1-VM-VB5" firstAttribute="top" secondItem="qCg-of-1TX" secondAttribute="bottom" constant="16" id="ehs-Hh-ecM"/>
                             <constraint firstItem="3K0-0n-uGo" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="8" id="iDJ-Qq-Y0I"/>
-                            <constraint firstItem="c0u-rg-FAl" firstAttribute="top" secondItem="3K0-0n-uGo" secondAttribute="bottom" constant="125" id="lTn-kJ-bm2"/>
                             <constraint firstItem="0QS-kg-zwp" firstAttribute="centerY" secondItem="wuv-m3-fhD" secondAttribute="centerY" constant="16" id="ljG-3T-9fg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0QS-kg-zwp" secondAttribute="trailing" constant="16" id="zaS-oj-xku"/>
                         </constraints>
@@ -227,7 +227,7 @@
                     </view>
                     <connections>
                         <outlet property="alreadyKnowButton" destination="YeW-At-c68" id="oRZ-5x-AxC"/>
-                        <outlet property="btnBottomConstraint" destination="lTn-kJ-bm2" id="577-9Y-QHJ"/>
+                        <outlet property="btnBottomConstraint" destination="ITm-qQ-Lbr" id="Y6F-u1-kHf"/>
                         <outlet property="meaningLabel" destination="0QS-kg-zwp" id="KiS-xd-Z09"/>
                         <outlet property="notAlreadyKnowButton" destination="UHw-7e-DMK" id="2bU-UR-fk5"/>
                         <outlet property="titleLabel" destination="eTG-b9-mTn" id="jPp-du-2Ma"/>

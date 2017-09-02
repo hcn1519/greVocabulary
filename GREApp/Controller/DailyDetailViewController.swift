@@ -13,7 +13,6 @@ class DailyDetailViewController: UIViewController {
     var parentController: DailyPageViewController?
     var pageIndex: Int = 0
     var word: Word?
-    var wordScore: WordScore?
     var backgroundShouldChange = true
     
     
@@ -75,21 +74,10 @@ class DailyDetailViewController: UIViewController {
         }
     }
     @IBAction func alreadyKnowBtnTapped(_ sender: UIButton) {
-        saveScore(isKnow: true)
         parentController?.goToNextPage()
     }
     @IBAction func notAlreadyKnowBtnTapped(_ sender: UIButton) {
-        saveScore(isKnow: false)
         parentController?.goToNextPage()
     }
-    
-    func saveScore(isKnow: Bool) {
-        if isKnow {
-            wordScore?.correctCount += 1
-        } else {
-            wordScore?.wrongCount += 1
-        }
-        
-        ad.saveContext()
-    }
+
 }

@@ -51,9 +51,41 @@ open class CSV {
             
             var row = Dictionary<String, String>()
             let values = line.components(separatedBy: self.delimiter)
+
+            var finalItem: String = ""
+
+            var isStart = false
+            var isEnd = false
+            var newValues: [String] = []
+
+            for item in values {
+                if item.contains("\"") {
+                    finalItem += item
+
+                    if isStart {
+                        // 이번이 처음 아님
+                        isEnd = true
+                        isStart = false
+                    } else {
+                        // 이번이 처음
+                        isStart = true
+                    }
+                } else {
+                    if !isStart {
+                        newValues.append(item)
+                    }
+                }
+
+                if isEnd && !finalItem.isEmpty {
+                    newValues.append(finalItem)
+                    finalItem = ""
+                }
+            }
+            print(newValues)
+
             for (index, header) in self.headers.enumerated() {
                 if index < values.count {
-                    row[header] = values[index]
+                    row[header] = newValues[index]
                 } else {
                     row[header] = ""
                 }

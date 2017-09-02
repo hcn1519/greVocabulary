@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66489E12349EFD255C97E03B /* Pods_GREApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511E08A106344B238FD4DC9 /* Pods_GREApp.framework */; };
+		6C8C89A4E7CF43CB5F7C3941 /* Pods_GREAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE44B75C4356D1F971A3140A /* Pods_GREAppTests.framework */; };
+		7E242D7D1F5ABF9E004C1BCE /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E242D7C1F5ABF9E004C1BCE /* Word.swift */; };
+		7E242D7F1F5AC245004C1BCE /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E242D7E1F5AC245004C1BCE /* Day.swift */; };
+		7E242D811F5ACB00004C1BCE /* testVocas.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E242D801F5ACB00004C1BCE /* testVocas.csv */; };
 		7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */; };
 		7E35C8CD1F1B4A2E00AE4092 /* DailyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8CC1F1B4A2E00AE4092 /* DailyDetailViewController.swift */; };
 		7E35C8D01F1B4A2E00AE4092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E35C8CE1F1B4A2E00AE4092 /* Main.storyboard */; };
@@ -18,14 +23,6 @@
 		7E35C9281F1B6F2000AE4092 /* DailyCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9271F1B6F2000AE4092 /* DailyCoverViewController.swift */; };
 		7E35C92A1F1B6FB300AE4092 /* DailyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9291F1B6FB300AE4092 /* DailyPageViewController.swift */; };
 		7EE109521F2C7E8B00920C50 /* GREAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109511F2C7E8B00920C50 /* GREAppTests.swift */; };
-		7EE109621F2C819000920C50 /* Test+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095A1F2C819000920C50 /* Test+CoreDataClass.swift */; };
-		7EE109631F2C819000920C50 /* Test+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095B1F2C819000920C50 /* Test+CoreDataProperties.swift */; };
-		7EE109641F2C819000920C50 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095C1F2C819000920C50 /* Word+CoreDataClass.swift */; };
-		7EE109651F2C819000920C50 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095D1F2C819000920C50 /* Word+CoreDataClass.swift */; };
-		7EE109661F2C819000920C50 /* WordScore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095E1F2C819000920C50 /* WordScore+CoreDataClass.swift */; };
-		7EE109671F2C819000920C50 /* WordScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1095F1F2C819000920C50 /* WordScore+CoreDataProperties.swift */; };
-		7EE109681F2C819000920C50 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109601F2C819000920C50 /* Day+CoreDataClass.swift */; };
-		7EE109691F2C819000920C50 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109611F2C819000920C50 /* Day+CoreDataClass.swift */; };
 		7EE1096B1F2CAD8400920C50 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1096A1F2CAD8400920C50 /* csv.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		084F58E32AA989397F79CA0E /* Pods-GREApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GREApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GREApp/Pods-GREApp.release.xcconfig"; sourceTree = "<group>"; };
+		4D464BDDBC55623B75C5E507 /* Pods-GREApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GREApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GREApp/Pods-GREApp.debug.xcconfig"; sourceTree = "<group>"; };
+		62343752966643BC368C99DC /* Pods-GREAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GREAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GREAppTests/Pods-GREAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7511E08A106344B238FD4DC9 /* Pods_GREApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GREApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E242D7C1F5ABF9E004C1BCE /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		7E242D7E1F5AC245004C1BCE /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		7E242D801F5ACB00004C1BCE /* testVocas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testVocas.csv; sourceTree = "<group>"; };
 		7E35C8C71F1B4A2E00AE4092 /* GREApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GREApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E35C8CC1F1B4A2E00AE4092 /* DailyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDetailViewController.swift; sourceTree = "<group>"; };
@@ -55,15 +59,9 @@
 		7EE1094F1F2C7E8B00920C50 /* GREAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GREAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE109511F2C7E8B00920C50 /* GREAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GREAppTests.swift; sourceTree = "<group>"; };
 		7EE109531F2C7E8B00920C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EE1095A1F2C819000920C50 /* Test+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7EE1095B1F2C819000920C50 /* Test+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7EE1095C1F2C819000920C50 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7EE1095D1F2C819000920C50 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Word+CoreDataClass.swift"; path = "../Word+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7EE1095E1F2C819000920C50 /* WordScore+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WordScore+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7EE1095F1F2C819000920C50 /* WordScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WordScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7EE109601F2C819000920C50 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7EE109611F2C819000920C50 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day+CoreDataClass.swift"; path = "../Day+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7EE1096A1F2CAD8400920C50 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		994DBAFFBB54F843584E43C3 /* Pods-GREAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GREAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GREAppTests/Pods-GREAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE44B75C4356D1F971A3140A /* Pods_GREAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GREAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66489E12349EFD255C97E03B /* Pods_GREApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8C89A4E7CF43CB5F7C3941 /* Pods_GREAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +90,8 @@
 				7E35C8C91F1B4A2E00AE4092 /* GREApp */,
 				7EE109501F2C7E8B00920C50 /* GREAppTests */,
 				7E35C8C81F1B4A2E00AE4092 /* Products */,
+				BF05F6B5D498C06ABC55252B /* Pods */,
+				C7F36C760610D2BD474AFD27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,11 +141,8 @@
 		7E35C9061F1B57FA00AE4092 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7EE1095A1F2C819000920C50 /* Test+CoreDataClass.swift */,
-				7EE1095C1F2C819000920C50 /* Word+CoreDataClass.swift */,
-				7EE1095E1F2C819000920C50 /* WordScore+CoreDataClass.swift */,
-				7EE109601F2C819000920C50 /* Day+CoreDataClass.swift */,
-				7EE109591F2C806E00920C50 /* Core Data */,
+				7E242D7C1F5ABF9E004C1BCE /* Word.swift */,
+				7E242D7E1F5AC245004C1BCE /* Day.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,17 +166,6 @@
 			path = GREAppTests;
 			sourceTree = "<group>";
 		};
-		7EE109591F2C806E00920C50 /* Core Data */ = {
-			isa = PBXGroup;
-			children = (
-				7EE1095B1F2C819000920C50 /* Test+CoreDataProperties.swift */,
-				7EE1095D1F2C819000920C50 /* Word+CoreDataClass.swift */,
-				7EE1095F1F2C819000920C50 /* WordScore+CoreDataProperties.swift */,
-				7EE109611F2C819000920C50 /* Day+CoreDataClass.swift */,
-			);
-			path = "Core Data";
-			sourceTree = "<group>";
-		};
 		7EE1096C1F2CAD8D00920C50 /* Helper/Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,9 +177,30 @@
 		7EE1096D1F2CAE9D00920C50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7E242D801F5ACB00004C1BCE /* testVocas.csv */,
 				7E35C8D41F1B4A2E00AE4092 /* Assets.xcassets */,
 			);
-			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF05F6B5D498C06ABC55252B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D464BDDBC55623B75C5E507 /* Pods-GREApp.debug.xcconfig */,
+				084F58E32AA989397F79CA0E /* Pods-GREApp.release.xcconfig */,
+				994DBAFFBB54F843584E43C3 /* Pods-GREAppTests.debug.xcconfig */,
+				62343752966643BC368C99DC /* Pods-GREAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7F36C760610D2BD474AFD27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7511E08A106344B238FD4DC9 /* Pods_GREApp.framework */,
+				DE44B75C4356D1F971A3140A /* Pods_GREAppTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E35C8DC1F1B4A2E00AE4092 /* Build configuration list for PBXNativeTarget "GREApp" */;
 			buildPhases = (
+				86E87DDD7587F71E8E82440E /* [CP] Check Pods Manifest.lock */,
 				7E35C8C31F1B4A2E00AE4092 /* Sources */,
 				7E35C8C41F1B4A2E00AE4092 /* Frameworks */,
 				7E35C8C51F1B4A2E00AE4092 /* Resources */,
+				CC1B2696113530FC7AD4C322 /* [CP] Embed Pods Frameworks */,
+				E3E5B123B5F35A7A18EC6527 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EE109581F2C7E8B00920C50 /* Build configuration list for PBXNativeTarget "GREAppTests" */;
 			buildPhases = (
+				F24A75C2B9F90A53DC764CBA /* [CP] Check Pods Manifest.lock */,
 				7EE1094B1F2C7E8B00920C50 /* Sources */,
 				7EE1094C1F2C7E8B00920C50 /* Frameworks */,
 				7EE1094D1F2C7E8B00920C50 /* Resources */,
+				6B28079D9322AE1C536AFAF9 /* [CP] Embed Pods Frameworks */,
+				FAD3DF9F067A18CAD235E6C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +294,7 @@
 				7E35C8D81F1B4A2E00AE4092 /* LaunchScreen.storyboard in Resources */,
 				7E35C8D51F1B4A2E00AE4092 /* Assets.xcassets in Resources */,
 				7E35C8D01F1B4A2E00AE4092 /* Main.storyboard in Resources */,
+				7E242D811F5ACB00004C1BCE /* testVocas.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,27 +307,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6B28079D9322AE1C536AFAF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GREAppTests/Pods-GREAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86E87DDD7587F71E8E82440E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GREApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC1B2696113530FC7AD4C322 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GREApp/Pods-GREApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GREApp/Pods-GREApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3E5B123B5F35A7A18EC6527 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GREApp/Pods-GREApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24A75C2B9F90A53DC764CBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GREAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD3DF9F067A18CAD235E6C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GREAppTests/Pods-GREAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7E35C8C31F1B4A2E00AE4092 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7EE1096B1F2CAD8400920C50 /* csv.swift in Sources */,
-				7EE109661F2C819000920C50 /* WordScore+CoreDataClass.swift in Sources */,
 				7E35C8CD1F1B4A2E00AE4092 /* DailyDetailViewController.swift in Sources */,
-				7EE109651F2C819000920C50 /* Word+CoreDataClass.swift in Sources */,
-				7EE109641F2C819000920C50 /* Word+CoreDataClass.swift in Sources */,
+				7E242D7D1F5ABF9E004C1BCE /* Word.swift in Sources */,
 				7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */,
-				7EE109671F2C819000920C50 /* WordScore+CoreDataProperties.swift in Sources */,
 				7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */,
-				7EE109631F2C819000920C50 /* Test+CoreDataProperties.swift in Sources */,
-				7EE109691F2C819000920C50 /* Day+CoreDataClass.swift in Sources */,
 				7E35C9281F1B6F2000AE4092 /* DailyCoverViewController.swift in Sources */,
 				7E35C8D31F1B4A2E00AE4092 /* GREApp.xcdatamodeld in Sources */,
 				7E35C92A1F1B6FB300AE4092 /* DailyPageViewController.swift in Sources */,
+				7E242D7F1F5AC245004C1BCE /* Day.swift in Sources */,
 				7E35C8E31F1B4CA300AE4092 /* DailyTestCell.swift in Sources */,
-				7EE109681F2C819000920C50 /* Day+CoreDataClass.swift in Sources */,
-				7EE109621F2C819000920C50 /* Test+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,10 +572,11 @@
 		};
 		7E35C8DD1F1B4A2E00AE4092 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D464BDDBC55623B75C5E507 /* Pods-GREApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W6XUQ3PPN9;
-				INFOPLIST_FILE = GREApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GREApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREApp;
@@ -473,10 +588,11 @@
 		};
 		7E35C8DE1F1B4A2E00AE4092 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 084F58E32AA989397F79CA0E /* Pods-GREApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W6XUQ3PPN9;
-				INFOPLIST_FILE = GREApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GREApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREApp;
@@ -488,6 +604,7 @@
 		};
 		7EE109561F2C7E8B00920C50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 994DBAFFBB54F843584E43C3 /* Pods-GREAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -506,6 +623,7 @@
 		};
 		7EE109571F2C7E8B00920C50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62343752966643BC368C99DC /* Pods-GREAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
