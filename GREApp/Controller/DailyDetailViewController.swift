@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class DailyDetailViewController: UIViewController {
     
@@ -15,7 +16,9 @@ class DailyDetailViewController: UIViewController {
     var word: Word?
     var backgroundShouldChange = true
     
-    
+    let realm = try! Realm()
+    var currentWord: Word?
+
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var meaningLabel: UILabel!
     @IBOutlet weak var alreadyKnowButton: UIButton!
@@ -26,6 +29,10 @@ class DailyDetailViewController: UIViewController {
         super.viewDidLoad()
         
         titleLabel.text = word?.title
+
+        print(pageIndex)
+
+        currentWord = realm.object(ofType: Word.self, forPrimaryKey: pageIndex)
     }
 
     override func updateViewConstraints() {
@@ -73,11 +80,27 @@ class DailyDetailViewController: UIViewController {
             backgroundShouldChange = false
         }
     }
+
     @IBAction func alreadyKnowBtnTapped(_ sender: UIButton) {
+        saveScore(isKnow: true)
         parentController?.goToNextPage()
     }
+
     @IBAction func notAlreadyKnowBtnTapped(_ sender: UIButton) {
+        saveScore(isKnow: false)
         parentController?.goToNextPage()
+    }
+
+    func saveScore(isKnow: Bool) {
+        if isKnow {
+            try! realm.write {
+                currentWord?.correctCount += 1
+            }
+        } else {
+            try! realm.write {
+                currentWord?.wrongCount += 1
+            }
+        }
     }
 
 }

@@ -30,9 +30,8 @@ class DailyViewController: UIViewController {
 
         parseWordCSV()
 
-        let result = realm.objects(Word.self)
+//        let result = realm.objects(Word.self)
 
-        print(result)
     }
 
     func parseWordCSV(){

@@ -19,17 +19,14 @@ class DailyPageViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        generateTestWords()
+
+        todayWords = realm.objects(Word.self).filter("dayId == %d", date!)
 
         self.dataSource = self
-        
         self.setViewControllers([getViewControllerAtIndex(index: 0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         
         removeSwipeGesture()
 
-
-        todayWords = realm.objects(Word.self).filter("dayId == %d", date!)
 
     }
 
@@ -75,7 +72,11 @@ extension DailyPageViewController: UIPageViewControllerDataSource {
         
         return pageContentViewController
     }
-    
+
+
+    func calculateIndex(pageIndex: Int) {
+
+    }
 }
 
 extension DailyPageViewController {

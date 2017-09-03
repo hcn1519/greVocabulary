@@ -3,7 +3,7 @@ dayId,wordId,title,meaning,correctCount,wrongCount
 1,2,impoverish,빈곤 가난하게하다,0,0
 1,3,cheifdomm,"부족, 족",0,0
 1,4,inland counterparts,내륙,0,0
-1,5,hinterland,"오지, 내륙지역",0,0
+1,5,hinterland,"오지, 니륙",0,0
 1,6,undermine,약화시키다,0,0
 1,7,vertigo,현기증,0,0
 1,8,vertiginous,"dizzy, 아찔한",0,0
@@ -28,8 +28,8 @@ dayId,wordId,title,meaning,correctCount,wrongCount
 1,27,dote on,애지중지하다,0,0
 1,28,harness,이용하다,0,0
 1,29,ameliorate,개선하다,0,0
-2,30,superfulous,"필요치않은, 불필요한",0,0
-2,31,redemption,"구원, 구함",0,0
+1,30,superfulous,"필요치않은, 불필요한",0,0
+2,31,redemption,"구원, 구함, ",0,0
 2,32,redeem,"보완, 만회하다, 상쇄하다",0,0
 2,33,proscribe,"금지하다(공식, 정책 등)",0,0
 2,34,recondite,난해한,0,0
@@ -38,7 +38,7 @@ dayId,wordId,title,meaning,correctCount,wrongCount
 2,37,relinquish,"양도, 포기하다(공식, 정책등)",0,0
 2,38,debacle,대실패,0,0
 2,39,adulation,"과찬, 지나친아부",0,0
-2,40,allegiance,충성,0,0
+2,40,allegiance,"충성, ",0,0
 2,41,disperate,"다른, 이종의",0,0
 2,42,discretion,"자유, 자유재량권, 신중함",0,0
 2,43,consensus,의견합치,0,0
@@ -50,7 +50,7 @@ dayId,wordId,title,meaning,correctCount,wrongCount
 2,49,polemical,"격론의, 논란적인",0,0
 2,50,inordinate,"지나친, 무절제한",0,0
 2,51,devious,"우회하는, 기만적인, 정도가 아닌",0,0
-2,52,virulent,독설적인,0,0
+2,52,virulent,"독설적인, ",0,0
 2,53,prodical,"낭비하는, 방탕한",0,0
 2,54,remedial,보충의,0,0
 2,55,politic,현명한,0,0
@@ -58,7 +58,7 @@ dayId,wordId,title,meaning,correctCount,wrongCount
 2,57,craven,겁많은,0,0
 2,58,surly,퉁명스러운,0,0
 2,59,myriad,수많은,0,0
-3,60,disposition,"기질, 성질",0,0
+2,60,disposition,"기질, 성질",0,0
 3,61,redoubtable,"경외할만한, 가공할",0,0
 3,62,adversary,"상대방, 적",0,0
 3,63,facile,"피상적인, 얕은, 경솔한",0,0
@@ -70,7 +70,7 @@ dayId,wordId,title,meaning,correctCount,wrongCount
 3,69,cathartic,"후련한, 카타르시스적인, 배변의",0,0
 3,70,diminutive,"작은, 소형의",0,0
 3,71,docile,"온순한, 말잘듣는",0,0
-3,72,indefatigable,지칠줄모르는,0,0
+3,72,indefatigable,"지칠줄모르는, ",0,0
 3,73,seminal,"종자의, 씨앗의, 장래성이 있는",0,0
 3,74,non-plus,"당황의, 깜짝놀란",0,0
 3,75,flummox,"어리둥절하게, 당혹하게하다, 사업실패하다",0,0
@@ -78,7 +78,7 @@ dayId,wordId,title,meaning,correctCount,wrongCount
 3,77,perfunctory,"형식적인, 습관적인",0,0
 3,78,congenial,"적합한, 잘맞는",0,0
 3,79,fads,"유행, 일시적인",0,0
-3,80,averse,싫어하는,0,0
+3,80,averse,ㅅ싫어하는,0,0
 3,81,irk,짜증스럽게하다,0,0
 3,82,tendentiousness,"과격한 극단적인, 편향적인",0,0
 3,83,subtlety,"미묘함, 예민함, 중요한 디테일",0,0
@@ -88,3 +88,4 @@ dayId,wordId,title,meaning,correctCount,wrongCount
 3,87,overt,"명시적인, 공공연한",0,0
 3,88,pensivenss,"멍하니 골똘생각, 애수어린",0,0
 3,89,fastidiousness,"꽤 까다로운, 괴팍한, 세심한, 완벽주의",0,0
+3,90,disingenuous,"과시하는 거짓의, 솔직하지못한",0,0

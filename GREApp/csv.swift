@@ -40,7 +40,41 @@ open class CSV {
     func parseHeaders(fromLines lines: [String]) -> [String] {
         return lines[0].components(separatedBy: self.delimiter)
     }
-    
+
+
+    func escapeDoubleQuotesComma(values: [String]) -> [String] {
+        var finalItem: String = ""
+
+        var isStart = false
+        var isEnd = false
+        var newValues: [String] = []
+
+        for item in values {
+            if item.contains("\"") {
+                finalItem += item
+
+                if isStart {
+                    // 이번이 처음 아님
+                    isEnd = true
+                    isStart = false
+                } else {
+                    // 이번이 처음
+                    isStart = true
+                }
+            } else {
+                if !isStart {
+                    newValues.append(item)
+                }
+            }
+
+            if isEnd && !finalItem.isEmpty {
+                newValues.append(finalItem)
+                finalItem = ""
+            }
+        }
+        return newValues
+
+    }
     func parseRows(fromLines lines: [String]) -> [Dictionary<String, String>] {
         var rows: [Dictionary<String, String>] = []
         
@@ -52,35 +86,8 @@ open class CSV {
             var row = Dictionary<String, String>()
             let values = line.components(separatedBy: self.delimiter)
 
-            var finalItem: String = ""
+            let newValues = escapeDoubleQuotesComma(values: values)
 
-            var isStart = false
-            var isEnd = false
-            var newValues: [String] = []
-
-            for item in values {
-                if item.contains("\"") {
-                    finalItem += item
-
-                    if isStart {
-                        // 이번이 처음 아님
-                        isEnd = true
-                        isStart = false
-                    } else {
-                        // 이번이 처음
-                        isStart = true
-                    }
-                } else {
-                    if !isStart {
-                        newValues.append(item)
-                    }
-                }
-
-                if isEnd && !finalItem.isEmpty {
-                    newValues.append(finalItem)
-                    finalItem = ""
-                }
-            }
             print(newValues)
 
             for (index, header) in self.headers.enumerated() {

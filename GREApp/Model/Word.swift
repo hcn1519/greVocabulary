@@ -10,12 +10,16 @@ import Foundation
 import RealmSwift
 
 class Word: Object {
+    dynamic var wordId = 0
     dynamic var dayId = 0
     dynamic var title = ""
     dynamic var meaning = ""
-    dynamic var wordId = 0
     dynamic var correctCount = 0
     dynamic var wrongCount = 0
+
+    override class func primaryKey() -> String? {
+        return "wordId"
+    }
 
 //    init(dayId: Int, title: String, meaning: String, wordId: Int, correctCount: Int, wrongCount: Int) {
 //        self.dayId = dayId

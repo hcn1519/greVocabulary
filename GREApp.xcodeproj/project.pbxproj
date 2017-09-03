@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		66489E12349EFD255C97E03B /* Pods_GREApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511E08A106344B238FD4DC9 /* Pods_GREApp.framework */; };
 		6C8C89A4E7CF43CB5F7C3941 /* Pods_GREAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE44B75C4356D1F971A3140A /* Pods_GREAppTests.framework */; };
+		7E08B8861F5BCE3E000624A8 /* testVocas.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E08B8851F5BCE3E000624A8 /* testVocas.csv */; };
 		7E242D7D1F5ABF9E004C1BCE /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E242D7C1F5ABF9E004C1BCE /* Word.swift */; };
 		7E242D7F1F5AC245004C1BCE /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E242D7E1F5AC245004C1BCE /* Day.swift */; };
-		7E242D811F5ACB00004C1BCE /* testVocas.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E242D801F5ACB00004C1BCE /* testVocas.csv */; };
 		7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */; };
 		7E35C8CD1F1B4A2E00AE4092 /* DailyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8CC1F1B4A2E00AE4092 /* DailyDetailViewController.swift */; };
 		7E35C8D01F1B4A2E00AE4092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E35C8CE1F1B4A2E00AE4092 /* Main.storyboard */; };
@@ -41,9 +41,9 @@
 		4D464BDDBC55623B75C5E507 /* Pods-GREApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GREApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GREApp/Pods-GREApp.debug.xcconfig"; sourceTree = "<group>"; };
 		62343752966643BC368C99DC /* Pods-GREAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GREAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GREAppTests/Pods-GREAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		7511E08A106344B238FD4DC9 /* Pods_GREApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GREApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E08B8851F5BCE3E000624A8 /* testVocas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testVocas.csv; sourceTree = "<group>"; };
 		7E242D7C1F5ABF9E004C1BCE /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		7E242D7E1F5AC245004C1BCE /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		7E242D801F5ACB00004C1BCE /* testVocas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testVocas.csv; sourceTree = "<group>"; };
 		7E35C8C71F1B4A2E00AE4092 /* GREApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GREApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E35C8CC1F1B4A2E00AE4092 /* DailyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDetailViewController.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		7EE1096D1F2CAE9D00920C50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7E242D801F5ACB00004C1BCE /* testVocas.csv */,
+				7E08B8851F5BCE3E000624A8 /* testVocas.csv */,
 				7E35C8D41F1B4A2E00AE4092 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -294,7 +294,7 @@
 				7E35C8D81F1B4A2E00AE4092 /* LaunchScreen.storyboard in Resources */,
 				7E35C8D51F1B4A2E00AE4092 /* Assets.xcassets in Resources */,
 				7E35C8D01F1B4A2E00AE4092 /* Main.storyboard in Resources */,
-				7E242D811F5ACB00004C1BCE /* testVocas.csv in Resources */,
+				7E08B8861F5BCE3E000624A8 /* testVocas.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
