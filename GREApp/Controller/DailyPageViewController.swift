@@ -7,25 +7,29 @@
 //
 
 import UIKit
+import RealmSwift
 
 class DailyPageViewController: UIPageViewController {
-    
-    var words: [Word] = []
-    var wordScores: [WordScore] = []
-    
-    
+
+    var date: Int?
+
+    let realm = try! Realm()
+
+    var todayWords: Results<Word>!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        generateTestWords()
-        
-        
+
+        todayWords = realm.objects(Word.self).filter("dayId == %d", date!)
+
         self.dataSource = self
-        
         self.setViewControllers([getViewControllerAtIndex(index: 0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         
         removeSwipeGesture()
+
+
     }
+
 }
 
 extension DailyPageViewController: UIPageViewControllerDataSource {
@@ -48,7 +52,7 @@ extension DailyPageViewController: UIPageViewControllerDataSource {
             return nil;
         }
         index += 1;
-        if (index == words.count) {
+        if (index == 30) {
             return nil;
         }
         
@@ -58,16 +62,21 @@ extension DailyPageViewController: UIPageViewControllerDataSource {
     // cellForRow와 같은 데이터 다루기
     func getViewControllerAtIndex(index: NSInteger) -> DailyDetailViewController {
         let pageContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "DailyDetailViewController") as! DailyDetailViewController
-        
+
+        let indexPath = IndexPath(item: index, section: 0)
+
         pageContentViewController.pageIndex = index
-        pageContentViewController.word = words[index]
-        pageContentViewController.wordScore = wordScores[index]
+        pageContentViewController.word = todayWords[indexPath.row]
         
         pageContentViewController.parentController = self
         
         return pageContentViewController
     }
-    
+
+
+    func calculateIndex(pageIndex: Int) {
+
+    }
 }
 
 extension DailyPageViewController {
@@ -95,30 +104,4 @@ extension DailyPageViewController {
             }
         }
     }
-}
-extension DailyPageViewController {
-    func generateTestWords() {
-        
-        let titles = ["abalone", "hello", "world"]
-        let meanings = ["전복", "안녕하세요", "세계"]
-        
-        for i in 0..<3 {
-            let word = Word(context: context)
-            word.wordId = Int16(i)
-            word.title = titles[i]
-            word.meaning = meanings[i]
-            
-            words.append(word)
-            
-            let wordScore = WordScore(context: context)
-            
-            wordScore.correctCount = 0
-            wordScore.wrongCount = 0
-            wordScore.wordScoreId = Int16(i)
-            
-            wordScores.append(wordScore)
-        }
-        
-    }
-
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Day" representedClassName=".Day" syncable="YES">
+        <attribute name="dateNumber" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dayId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isFinished" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="toWord" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Word" inverseName="toDay" inverseEntity="Word" syncable="YES"/>
+    </entity>
+    <entity name="Test" representedClassName=".Test" syncable="YES">
+        <attribute name="testDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="testScore" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="toWord" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Word" inverseName="toTest" inverseEntity="Word" syncable="YES"/>
+    </entity>
+    <entity name="Word" representedClassName=".Word" syncable="YES">
+        <attribute name="correctCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dayId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="meaning" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wordId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wrongCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="toDay" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="toWord" inverseEntity="Day" syncable="YES"/>
+        <relationship name="toTest" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Test" inverseName="toWord" inverseEntity="Test" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Day" positionX="-414" positionY="-141" width="128" height="105"/>
+        <element name="Test" positionX="-243" positionY="51" width="128" height="88"/>
+        <element name="Word" positionX="-56" positionY="-216" width="128" height="165"/>
+    </elements>
+</model>

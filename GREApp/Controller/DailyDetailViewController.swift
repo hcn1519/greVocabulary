@@ -7,27 +7,40 @@
 //
 
 import UIKit
+import RealmSwift
 
 class DailyDetailViewController: UIViewController {
     
     var parentController: DailyPageViewController?
     var pageIndex: Int = 0
     var word: Word?
-    var wordScore: WordScore?
     var backgroundShouldChange = true
     
-    
+    let realm = try! Realm()
+    var currentWord: Word?
+
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var meaningLabel: UILabel!
     @IBOutlet weak var alreadyKnowButton: UIButton!
     @IBOutlet weak var notAlreadyKnowButton: UIButton!
     
+    @IBOutlet weak var btnBottomConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         titleLabel.text = word?.title
+
+        print(pageIndex)
+
+        currentWord = realm.object(ofType: Word.self, forPrimaryKey: pageIndex)
     }
-    
+
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
+
+        btnBottomConstraint.constant = self.view.bounds.height / 5
+    }
+
     // 배우기를 취소하고 돌아가기
     @IBAction func closeBtnTapped(_ sender: UIButton) {
         
@@ -67,22 +80,27 @@ class DailyDetailViewController: UIViewController {
             backgroundShouldChange = false
         }
     }
+
     @IBAction func alreadyKnowBtnTapped(_ sender: UIButton) {
         saveScore(isKnow: true)
         parentController?.goToNextPage()
     }
+
     @IBAction func notAlreadyKnowBtnTapped(_ sender: UIButton) {
         saveScore(isKnow: false)
         parentController?.goToNextPage()
     }
-    
+
     func saveScore(isKnow: Bool) {
         if isKnow {
-            wordScore?.correctCount += 1
+            try! realm.write {
+                currentWord?.correctCount += 1
+            }
         } else {
-            wordScore?.wrongCount += 1
+            try! realm.write {
+                currentWord?.wrongCount += 1
+            }
         }
-        
-        ad.saveContext()
     }
+
 }
