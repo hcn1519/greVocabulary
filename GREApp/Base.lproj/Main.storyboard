@@ -165,7 +165,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abalone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTG-b9-mTn">
-                                <rect key="frame" x="32" y="302.5" width="311" height="31.5"/>
+                                <rect key="frame" x="32" y="302" width="311" height="31.5"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -215,6 +215,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="eTG-b9-mTn" secondAttribute="trailing" constant="16" id="4Vn-uW-2gf"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="16" id="5c1-Oh-k0U"/>
                             <constraint firstItem="0QS-kg-zwp" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="16" id="9lM-ss-lUl"/>
+                            <constraint firstItem="3K0-0n-uGo" firstAttribute="top" secondItem="wuv-m3-fhD" secondAttribute="top" constant="512" id="AgE-My-qZA"/>
                             <constraint firstItem="3K0-0n-uGo" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="EZP-nS-cfW"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="HG8-UW-b3v"/>
                             <constraint firstItem="c0u-rg-FAl" firstAttribute="top" secondItem="3K0-0n-uGo" secondAttribute="bottom" constant="125" id="ITm-qQ-Lbr"/>
@@ -263,11 +264,68 @@
                     </tabBar>
                     <connections>
                         <segue destination="HqU-mJ-qAi" kind="relationship" relationship="viewControllers" id="zHz-Wv-gQ0"/>
+                        <segue destination="7LW-fW-KAe" kind="relationship" relationship="viewControllers" id="lTH-gC-xVW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Vn-Ub-7X5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1487" y="81"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gte-YN-4Bl">
+            <objects>
+                <viewController id="W4Y-OI-6c1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o6a-Mw-UUy"/>
+                        <viewControllerLayoutGuide type="bottom" id="ynd-wQ-3yK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WNe-85-7LM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7zX-rU-P3r">
+                                <rect key="frame" x="87" y="278" width="201.5" height="111.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="테스트 범위를 선택하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSI-Jp-DkQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="201.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EAa-NL-nEA">
+                                        <rect key="frame" x="5.5" y="43.5" width="191" height="68"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad2-Yi-gv0">
+                                                <rect key="frame" x="39" y="0.0" width="113" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="공부한 모든 단어">
+                                                    <color key="titleColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcO-R0-XjE">
+                                                <rect key="frame" x="0.0" y="36" width="191" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="공부는 했는데... 모르는 단어">
+                                                    <color key="titleColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7zX-rU-P3r" firstAttribute="centerX" secondItem="WNe-85-7LM" secondAttribute="centerX" id="e6R-RP-c3m"/>
+                            <constraint firstItem="7zX-rU-P3r" firstAttribute="centerY" secondItem="WNe-85-7LM" secondAttribute="centerY" id="vyF-pD-XmV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F7q-Y6-3Jo"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MoS-8W-Rfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517.60000000000002" y="483.50824587706148"/>
         </scene>
         <!--Learning-->
         <scene sceneID="kaH-JG-KPR">
@@ -287,6 +345,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgo-ga-w5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-465" y="-288"/>
+        </scene>
+        <!--Test-->
+        <scene sceneID="CEX-ga-eLr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7LW-fW-KAe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Test" id="tP3-Wo-YTQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MPm-Ts-hpw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="W4Y-OI-6c1" kind="relationship" relationship="rootViewController" id="y7W-yh-371"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bl-Ta-Zkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391.19999999999999" y="483.50824587706148"/>
         </scene>
     </scenes>
     <resources>

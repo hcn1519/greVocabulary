@@ -43,9 +43,7 @@ extension DailyViewController: UICollectionViewDataSource {
 
         let item = days[indexPath.row]
 
-        print(item.isFinished)
         cell.configureCell(day: item)
-
 
         return cell
     }
