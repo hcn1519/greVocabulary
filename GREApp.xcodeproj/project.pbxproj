@@ -10,6 +10,7 @@
 		66489E12349EFD255C97E03B /* Pods_GREApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511E08A106344B238FD4DC9 /* Pods_GREApp.framework */; };
 		6C8C89A4E7CF43CB5F7C3941 /* Pods_GREAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE44B75C4356D1F971A3140A /* Pods_GREAppTests.framework */; };
 		7E08B8861F5BCE3E000624A8 /* testVocas.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E08B8851F5BCE3E000624A8 /* testVocas.csv */; };
+		7E08B8881F5BE754000624A8 /* testDays.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E08B8871F5BE754000624A8 /* testDays.csv */; };
 		7E242D7D1F5ABF9E004C1BCE /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E242D7C1F5ABF9E004C1BCE /* Word.swift */; };
 		7E242D7F1F5AC245004C1BCE /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E242D7E1F5AC245004C1BCE /* Day.swift */; };
 		7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 		62343752966643BC368C99DC /* Pods-GREAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GREAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GREAppTests/Pods-GREAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		7511E08A106344B238FD4DC9 /* Pods_GREApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GREApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E08B8851F5BCE3E000624A8 /* testVocas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testVocas.csv; sourceTree = "<group>"; };
+		7E08B8871F5BE754000624A8 /* testDays.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testDays.csv; sourceTree = "<group>"; };
 		7E242D7C1F5ABF9E004C1BCE /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		7E242D7E1F5AC245004C1BCE /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		7E35C8C71F1B4A2E00AE4092 /* GREApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GREApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +179,7 @@
 		7EE1096D1F2CAE9D00920C50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7E08B8871F5BE754000624A8 /* testDays.csv */,
 				7E08B8851F5BCE3E000624A8 /* testVocas.csv */,
 				7E35C8D41F1B4A2E00AE4092 /* Assets.xcassets */,
 			);
@@ -291,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E08B8881F5BE754000624A8 /* testDays.csv in Resources */,
 				7E35C8D81F1B4A2E00AE4092 /* LaunchScreen.storyboard in Resources */,
 				7E35C8D51F1B4A2E00AE4092 /* Assets.xcassets in Resources */,
 				7E35C8D01F1B4A2E00AE4092 /* Main.storyboard in Resources */,

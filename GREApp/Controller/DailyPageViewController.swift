@@ -11,10 +11,8 @@ import RealmSwift
 
 class DailyPageViewController: UIPageViewController {
 
-    var date: Int?
-
     let realm = try! Realm()
-
+    var date: Int?
     var todayWords: Results<Word>!
 
     override func viewDidLoad() {
@@ -26,8 +24,6 @@ class DailyPageViewController: UIPageViewController {
         self.setViewControllers([getViewControllerAtIndex(index: 0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         
         removeSwipeGesture()
-
-
     }
 
 }
@@ -53,6 +49,31 @@ extension DailyPageViewController: UIPageViewControllerDataSource {
         }
         index += 1;
         if (index == 30) {
+
+            let today = realm.object(ofType: Day.self, forPrimaryKey: date!)
+
+            let alert: UIAlertController = UIAlertController(title: "메인 화면으로", message: "오늘의 단어를 완료하였습니다.", preferredStyle: .alert)
+
+            let ok = UIAlertAction(title: "OK", style: .default, handler: {_ in
+
+                try! self.realm.write {
+                    today?.finishedDate = Date()
+                    today?.isFinished = true
+                }
+
+//                let navigationController = self.presentingViewController as? UINavigationController
+
+                self.dismiss(animated: true) {
+                    self.navigationController?.popToRootViewController(animated: true)
+                }
+
+            })
+
+            alert.addAction(ok)
+
+            self.present(alert, animated: true, completion: nil)
+
+
             return nil;
         }
         
@@ -71,11 +92,6 @@ extension DailyPageViewController: UIPageViewControllerDataSource {
         pageContentViewController.parentController = self
         
         return pageContentViewController
-    }
-
-
-    func calculateIndex(pageIndex: Int) {
-
     }
 }
 
