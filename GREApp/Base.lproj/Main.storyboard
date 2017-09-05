@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OQO-Dj-PBd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OQO-Dj-PBd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
         <array key="TimesNewRomanBold.ttf">
             <string>TimesNewRomanPS-BoldMT</string>
         </array>
@@ -37,7 +40,7 @@
                                     <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dailyCellId" id="LRk-k7-oFd" customClass="DailyTestCell" customModule="GREApp" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dailyCellId" id="LRk-k7-oFd" customClass="DailyLearnCell" customModule="GREApp" customModuleProvider="target">
                                         <rect key="frame" x="16" y="16" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -58,7 +61,7 @@
                                             <constraint firstItem="jiw-bH-Oym" firstAttribute="centerX" secondItem="LRk-k7-oFd" secondAttribute="centerX" id="jdH-zl-4lN"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="titleLabel" destination="jiw-bH-Oym" id="Sgu-9y-bRm"/>
+                                            <outlet property="titleLabel" destination="jiw-bH-Oym" id="XIJ-Gd-DOB"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -111,7 +114,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqp-C0-dai">
                                         <rect key="frame" x="37.5" y="38.5" width="59" height="32"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="시작하기"/>
+                                        <state key="normal" title="시작하기">
+                                            <color key="titleColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="beu-02-FO5" kind="presentation" identifier="dayStartSegue" id="uGb-86-Azc"/>
                                         </connections>
@@ -126,6 +131,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dayStartBtn" destination="Yqp-C0-dai" id="SHe-hJ-tXi"/>
+                        <outlet property="stackView" destination="B99-eE-FNb" id="Sx4-7i-Snb"/>
                         <outlet property="titleLabel" destination="sgT-Ba-tdo" id="e7q-cV-ZeS"/>
                     </connections>
                 </viewController>
@@ -165,14 +172,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abalone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTG-b9-mTn">
-                                <rect key="frame" x="32" y="302" width="311" height="31.5"/>
+                                <rect key="frame" x="32" y="302.5" width="311" height="31.5"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화면을 탭하면 뜻이 나옵니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QS-kg-zwp">
-                                <rect key="frame" x="32" y="341" width="311" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="32" y="341.5" width="311" height="17.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -181,8 +188,9 @@
                                 <subviews>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-At-c68">
                                         <rect key="frame" x="0.0" y="0.0" width="163.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="아는 단어에요">
-                                            <color key="titleColor" red="0.23529411764705882" green="0.52549019607843139" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.16078431369999999" green="0.38431372549999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alreadyKnowBtnTapped:" destination="6Dz-Am-fzp" eventType="touchUpInside" id="gwU-F0-J6C"/>
@@ -190,8 +198,9 @@
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHw-7e-DMK">
                                         <rect key="frame" x="163.5" y="0.0" width="163.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="모르는 단어에요">
-                                            <color key="titleColor" red="0.9137254901960784" green="0.63921568627450975" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="notAlreadyKnowBtnTapped:" destination="6Dz-Am-fzp" eventType="touchUpInside" id="9u5-qW-NrH"/>
@@ -215,18 +224,16 @@
                             <constraint firstAttribute="trailingMargin" secondItem="eTG-b9-mTn" secondAttribute="trailing" constant="16" id="4Vn-uW-2gf"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="16" id="5c1-Oh-k0U"/>
                             <constraint firstItem="0QS-kg-zwp" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="16" id="9lM-ss-lUl"/>
-                            <constraint firstItem="3K0-0n-uGo" firstAttribute="top" secondItem="wuv-m3-fhD" secondAttribute="top" constant="512" id="AgE-My-qZA"/>
-                            <constraint firstItem="3K0-0n-uGo" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="EZP-nS-cfW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3K0-0n-uGo" secondAttribute="trailing" constant="8" id="Dkd-sP-Isp"/>
+                            <constraint firstItem="3K0-0n-uGo" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="8" id="Fb0-ga-5xo"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="HG8-UW-b3v"/>
-                            <constraint firstItem="c0u-rg-FAl" firstAttribute="top" secondItem="3K0-0n-uGo" secondAttribute="bottom" constant="125" id="ITm-qQ-Lbr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3K0-0n-uGo" secondAttribute="trailing" constant="8" id="MVT-Vb-Kjj"/>
                             <constraint firstItem="c0u-rg-FAl" firstAttribute="top" secondItem="HuF-lM-oHh" secondAttribute="bottom" id="SJ6-Vz-yyU"/>
                             <constraint firstItem="hc1-VM-VB5" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leading" constant="16" id="THT-PH-9rs"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerY" secondItem="wuv-m3-fhD" secondAttribute="centerY" constant="-16" id="aa3-sa-Zll"/>
                             <constraint firstItem="hc1-VM-VB5" firstAttribute="top" secondItem="qCg-of-1TX" secondAttribute="bottom" constant="16" id="ehs-Hh-ecM"/>
-                            <constraint firstItem="3K0-0n-uGo" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="8" id="iDJ-Qq-Y0I"/>
                             <constraint firstItem="0QS-kg-zwp" firstAttribute="centerY" secondItem="wuv-m3-fhD" secondAttribute="centerY" constant="16" id="ljG-3T-9fg"/>
                             <constraint firstItem="HuF-lM-oHh" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leading" constant="-3" id="stQ-ed-GIz"/>
+                            <constraint firstItem="HuF-lM-oHh" firstAttribute="top" secondItem="3K0-0n-uGo" secondAttribute="bottom" constant="115" id="sy7-m2-axm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0QS-kg-zwp" secondAttribute="trailing" constant="16" id="zaS-oj-xku"/>
                         </constraints>
                         <connections>
@@ -235,7 +242,7 @@
                     </view>
                     <connections>
                         <outlet property="alreadyKnowButton" destination="YeW-At-c68" id="oRZ-5x-AxC"/>
-                        <outlet property="btnBottomConstraint" destination="ITm-qQ-Lbr" id="Y6F-u1-kHf"/>
+                        <outlet property="btnBottomConstraint" destination="sy7-m2-axm" id="vaT-eQ-K32"/>
                         <outlet property="meaningLabel" destination="0QS-kg-zwp" id="KiS-xd-Z09"/>
                         <outlet property="notAlreadyKnowButton" destination="UHw-7e-DMK" id="2bU-UR-fk5"/>
                         <outlet property="progressBar" destination="HuF-lM-oHh" id="kpr-m9-pKg"/>
@@ -251,7 +258,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2780" y="-291.00449775112446"/>
+            <point key="canvasLocation" x="2753" y="153"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Yt-IG-S2r">
@@ -271,10 +278,10 @@
             </objects>
             <point key="canvasLocation" x="-1487" y="81"/>
         </scene>
-        <!--View Controller-->
+        <!--Test View Controller-->
         <scene sceneID="gte-YN-4Bl">
             <objects>
-                <viewController id="W4Y-OI-6c1" sceneMemberID="viewController">
+                <viewController id="W4Y-OI-6c1" customClass="TestViewController" customModule="GREApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o6a-Mw-UUy"/>
                         <viewControllerLayoutGuide type="bottom" id="ynd-wQ-3yK"/>
@@ -301,6 +308,9 @@
                                                 <state key="normal" title="공부한 모든 단어">
                                                     <color key="titleColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="testAllWordTapped:" destination="W4Y-OI-6c1" eventType="touchUpInside" id="88N-ad-MUf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcO-R0-XjE">
                                                 <rect key="frame" x="0.0" y="36" width="191" height="32"/>
@@ -308,6 +318,9 @@
                                                 <state key="normal" title="공부는 했는데... 모르는 단어">
                                                     <color key="titleColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="testWrongWordTapped:" destination="W4Y-OI-6c1" eventType="touchUpInside" id="rBD-iL-Opj"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -322,10 +335,21 @@
                     </view>
                     <navigationItem key="navigationItem" id="F7q-Y6-3Jo"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="2T8-Tk-OMh" kind="presentation" identifier="testStartSegue" id="O8m-tQ-df1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MoS-8W-Rfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="517.60000000000002" y="483.50824587706148"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="jgE-Yd-cP4">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2T8-Tk-OMh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bj1-Za-7sI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1495" y="484"/>
         </scene>
         <!--Learning-->
         <scene sceneID="kaH-JG-KPR">

@@ -9,15 +9,23 @@
 import UIKit
 import RealmSwift
 
+
+enum ControllerType {
+    case dailyPage
+    case testPage
+}
+
 class DailyDetailViewController: UIViewController {
-    
-    var parentController: DailyPageViewController?
-    var pageIndex: Int = 0
-    var word: Word?
-    var backgroundShouldChange = true
-    
+
     let realm = try! Realm()
+
+    var parentController: UIViewController?
+    var pageIndex: Int = 0
+    var backgroundShouldChange = true
+
     var currentWord: Word?
+
+    var controllerType: ControllerType?
 
     let color30 = UIColor(red: 144/255, green: 202/255, blue: 249/255, alpha: 1.0)
     let color60 = UIColor(red: 66/255, green: 165/255, blue: 245/255, alpha: 1.0)
@@ -35,13 +43,16 @@ class DailyDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let word = word {
+        currentWord = realm.object(ofType: Word.self, forPrimaryKey: pageIndex)
+
+        if let word = currentWord {
             titleLabel.text = "\(word.title)"
         }
 
-        currentWord = realm.object(ofType: Word.self, forPrimaryKey: pageIndex)
+        setProgressBarStyle()
+    }
 
-
+    func setProgressBarStyle() {
         progressBar.layer.cornerRadius = 3.0
 
         if pageIndex + 1 < 10 {
@@ -57,14 +68,22 @@ class DailyDetailViewController: UIViewController {
         super.updateViewConstraints()
 
         btnBottomConstraint.constant = self.view.bounds.height / 5
-
         progressBarWidthConstraint.constant = (self.view.bounds.width / 30) * CGFloat(pageIndex + 1)
     }
 
     // 배우기를 취소하고 돌아가기
     @IBAction func closeBtnTapped(_ sender: UIButton) {
-        
-        let alert: UIAlertController = UIAlertController(title: "메인 화면으로", message: "여기서 끝낼 경우 오늘의 단어가 완료되지 않습니다.", preferredStyle: .alert)
+
+        var message = ""
+        if let controller = controllerType {
+            switch controller {
+            case ControllerType.dailyPage:
+                message = "여기서 끝낼 경우 오늘의 단어가 완료되지 않습니다."
+            case ControllerType.testPage:
+                message = "여기서 끝낼 경우 테스트가 완료되지 않습니다."
+            }
+        }
+        let alert: UIAlertController = UIAlertController(title: "메인 화면으로", message: message, preferredStyle: .alert)
         
         let ok = UIAlertAction(title: "끝내기", style: .destructive, handler: {_ in
             self.dismiss(animated: true, completion: nil)
@@ -84,9 +103,11 @@ class DailyDetailViewController: UIViewController {
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
         
         if backgroundShouldChange {
-            
-            meaningLabel.text = word?.meaning
-            meaningLabel.font = UIFont(name: "Helvetica Neue", size: 17)
+
+            if let word = currentWord {
+                meaningLabel.text = word.meaning
+            }
+            meaningLabel.font = UIFont(name: "Helvetica Neue", size: 15)
             meaningLabel.textColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1.0)
             
             alreadyKnowButton.isHidden = false
@@ -99,28 +120,66 @@ class DailyDetailViewController: UIViewController {
             
             backgroundShouldChange = false
         }
+
+        if let controller = controllerType {
+            switch controller {
+            case ControllerType.dailyPage:
+                alreadyKnowButton.titleLabel?.text = "아는 단어에요."
+                notAlreadyKnowButton.titleLabel?.text = "모르는 단어에요."
+            case ControllerType.testPage:
+                alreadyKnowButton.titleLabel?.text = "맞췄어요."
+                notAlreadyKnowButton.titleLabel?.text = "틀렸어요."
+            }
+        }
+        alreadyKnowButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
+        notAlreadyKnowButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
     }
 
     @IBAction func alreadyKnowBtnTapped(_ sender: UIButton) {
-        saveScore(isKnow: true)
-        parentController?.goToNextPage()
+
+        if let controller = controllerType {
+            switch controller {
+            case ControllerType.dailyPage:
+                saveScore(isKnow: true)
+                if let dvc = parentController as? DailyPageViewController {
+                    dvc.goToNextPage()
+                }
+            case ControllerType.testPage:
+                if let tvc = parentController as? TestPageViewController {
+                    tvc.goToNextPage()
+                }
+            }
+        }
+
     }
 
     @IBAction func notAlreadyKnowBtnTapped(_ sender: UIButton) {
-        saveScore(isKnow: false)
-        parentController?.goToNextPage()
+
+        if let controller = controllerType {
+            switch controller {
+            case ControllerType.dailyPage:
+                saveScore(isKnow: false)
+                if let dvc = parentController as? DailyPageViewController {
+                    dvc.goToNextPage()
+                }
+            case ControllerType.testPage:
+                if let tvc = parentController as? TestPageViewController {
+                    tvc.goToNextPage()
+                }
+            }
+        }
+
     }
 
     func saveScore(isKnow: Bool) {
-        if isKnow {
+        if let word = currentWord {
             try! realm.write {
-                currentWord?.correctCount += 1
-            }
-        } else {
-            try! realm.write {
-                currentWord?.wrongCount += 1
+                word.alreadyKnow = isKnow
             }
         }
     }
 
+    func updateTestScore() {
+
+    }
 }
