@@ -11,6 +11,9 @@
 		6C8C89A4E7CF43CB5F7C3941 /* Pods_GREAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE44B75C4356D1F971A3140A /* Pods_GREAppTests.framework */; };
 		7E08B8861F5BCE3E000624A8 /* testVocas.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E08B8851F5BCE3E000624A8 /* testVocas.csv */; };
 		7E08B8881F5BE754000624A8 /* testDays.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E08B8871F5BE754000624A8 /* testDays.csv */; };
+		7E0C7BCE1F5DAC6700280721 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C7BCD1F5DAC6700280721 /* TestViewController.swift */; };
+		7E0C7BD01F5DBC9300280721 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C7BCF1F5DBC9300280721 /* Test.swift */; };
+		7E0C7BD21F5DC20600280721 /* PageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C7BD11F5DC20600280721 /* PageDataSource.swift */; };
 		7E242D7D1F5ABF9E004C1BCE /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E242D7C1F5ABF9E004C1BCE /* Word.swift */; };
 		7E242D7F1F5AC245004C1BCE /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E242D7E1F5AC245004C1BCE /* Day.swift */; };
 		7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8CA1F1B4A2E00AE4092 /* AppDelegate.swift */; };
@@ -20,9 +23,10 @@
 		7E35C8D51F1B4A2E00AE4092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E35C8D41F1B4A2E00AE4092 /* Assets.xcassets */; };
 		7E35C8D81F1B4A2E00AE4092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E35C8D61F1B4A2E00AE4092 /* LaunchScreen.storyboard */; };
 		7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */; };
-		7E35C8E31F1B4CA300AE4092 /* DailyTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8E21F1B4CA300AE4092 /* DailyTestCell.swift */; };
 		7E35C9281F1B6F2000AE4092 /* DailyCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9271F1B6F2000AE4092 /* DailyCoverViewController.swift */; };
 		7E35C92A1F1B6FB300AE4092 /* DailyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9291F1B6FB300AE4092 /* DailyPageViewController.swift */; };
+		7ED62BC31F5C5FB6001E81E9 /* DailyLearnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED62BC21F5C5FB6001E81E9 /* DailyLearnCell.swift */; };
+		7ED778321F5D5A6600B1A2A5 /* TestPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED778311F5D5A6600B1A2A5 /* TestPageViewController.swift */; };
 		7EE109521F2C7E8B00920C50 /* GREAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109511F2C7E8B00920C50 /* GREAppTests.swift */; };
 		7EE1096B1F2CAD8400920C50 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1096A1F2CAD8400920C50 /* csv.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +48,9 @@
 		7511E08A106344B238FD4DC9 /* Pods_GREApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GREApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E08B8851F5BCE3E000624A8 /* testVocas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testVocas.csv; sourceTree = "<group>"; };
 		7E08B8871F5BE754000624A8 /* testDays.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testDays.csv; sourceTree = "<group>"; };
+		7E0C7BCD1F5DAC6700280721 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		7E0C7BCF1F5DBC9300280721 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		7E0C7BD11F5DC20600280721 /* PageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDataSource.swift; sourceTree = "<group>"; };
 		7E242D7C1F5ABF9E004C1BCE /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		7E242D7E1F5AC245004C1BCE /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		7E35C8C71F1B4A2E00AE4092 /* GREApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GREApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,9 +62,10 @@
 		7E35C8D71F1B4A2E00AE4092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E35C8D91F1B4A2E00AE4092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
-		7E35C8E21F1B4CA300AE4092 /* DailyTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTestCell.swift; sourceTree = "<group>"; };
 		7E35C9271F1B6F2000AE4092 /* DailyCoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCoverViewController.swift; sourceTree = "<group>"; };
 		7E35C9291F1B6FB300AE4092 /* DailyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPageViewController.swift; sourceTree = "<group>"; };
+		7ED62BC21F5C5FB6001E81E9 /* DailyLearnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyLearnCell.swift; sourceTree = "<group>"; };
+		7ED778311F5D5A6600B1A2A5 /* TestPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPageViewController.swift; sourceTree = "<group>"; };
 		7EE1094F1F2C7E8B00920C50 /* GREAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GREAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE109511F2C7E8B00920C50 /* GREAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GREAppTests.swift; sourceTree = "<group>"; };
 		7EE109531F2C7E8B00920C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,6 +136,8 @@
 				7E35C8CC1F1B4A2E00AE4092 /* DailyDetailViewController.swift */,
 				7E35C9271F1B6F2000AE4092 /* DailyCoverViewController.swift */,
 				7E35C9291F1B6FB300AE4092 /* DailyPageViewController.swift */,
+				7ED778311F5D5A6600B1A2A5 /* TestPageViewController.swift */,
+				7E0C7BCD1F5DAC6700280721 /* TestViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -135,7 +145,7 @@
 		7E35C8E41F1B4CA600AE4092 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7E35C8E21F1B4CA300AE4092 /* DailyTestCell.swift */,
+				7ED62BC21F5C5FB6001E81E9 /* DailyLearnCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -145,6 +155,7 @@
 			children = (
 				7E242D7C1F5ABF9E004C1BCE /* Word.swift */,
 				7E242D7E1F5AC245004C1BCE /* Day.swift */,
+				7E0C7BCF1F5DBC9300280721 /* Test.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				7EE1096A1F2CAD8400920C50 /* csv.swift */,
+				7E0C7BD11F5DC20600280721 /* PageDataSource.swift */,
 			);
 			name = Helper/Utilities;
 			sourceTree = "<group>";
@@ -421,15 +433,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EE1096B1F2CAD8400920C50 /* csv.swift in Sources */,
+				7ED62BC31F5C5FB6001E81E9 /* DailyLearnCell.swift in Sources */,
 				7E35C8CD1F1B4A2E00AE4092 /* DailyDetailViewController.swift in Sources */,
+				7E0C7BD21F5DC20600280721 /* PageDataSource.swift in Sources */,
 				7E242D7D1F5ABF9E004C1BCE /* Word.swift in Sources */,
 				7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */,
+				7ED778321F5D5A6600B1A2A5 /* TestPageViewController.swift in Sources */,
+				7E0C7BD01F5DBC9300280721 /* Test.swift in Sources */,
 				7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */,
 				7E35C9281F1B6F2000AE4092 /* DailyCoverViewController.swift in Sources */,
 				7E35C8D31F1B4A2E00AE4092 /* GREApp.xcdatamodeld in Sources */,
 				7E35C92A1F1B6FB300AE4092 /* DailyPageViewController.swift in Sources */,
+				7E0C7BCE1F5DAC6700280721 /* TestViewController.swift in Sources */,
 				7E242D7F1F5AC245004C1BCE /* Day.swift in Sources */,
-				7E35C8E31F1B4CA300AE4092 /* DailyTestCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
