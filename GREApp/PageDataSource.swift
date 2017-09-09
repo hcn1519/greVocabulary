@@ -34,6 +34,7 @@ class PageDataSource {
 
             if wrongWords {
                 // 모르는 단어만
+                words = realm.objects(Word.self).filter("alreadyKnow == %@", false)
 
             } else {
                 // 모든 단어 랜덤

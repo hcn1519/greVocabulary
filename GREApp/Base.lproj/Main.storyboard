@@ -183,11 +183,11 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3K0-0n-uGo">
-                                <rect key="frame" x="24" y="512" width="327" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3K0-0n-uGo">
+                                <rect key="frame" x="24" y="512" width="327" height="0.0"/>
                                 <subviews>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-At-c68">
-                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-At-c68">
+                                        <rect key="frame" x="-24" y="-542" width="0.0" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="아는 단어에요">
                                             <color key="titleColor" red="0.16078431369999999" green="0.38431372549999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -196,8 +196,8 @@
                                             <action selector="alreadyKnowBtnTapped:" destination="6Dz-Am-fzp" eventType="touchUpInside" id="gwU-F0-J6C"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHw-7e-DMK">
-                                        <rect key="frame" x="163.5" y="0.0" width="163.5" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHw-7e-DMK">
+                                        <rect key="frame" x="-24" y="-542" width="0.0" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="모르는 단어에요">
                                             <color key="titleColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -355,7 +355,7 @@
         <scene sceneID="kaH-JG-KPR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HqU-mJ-qAi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Learning" id="z33-UI-WGc"/>
+                    <tabBarItem key="tabBarItem" title="Learning" image="learning" id="z33-UI-WGc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dY4-s8-1rd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -374,7 +374,7 @@
         <scene sceneID="CEX-ga-eLr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7LW-fW-KAe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Test" id="tP3-Wo-YTQ"/>
+                    <tabBarItem key="tabBarItem" title="Test" image="test" id="tP3-Wo-YTQ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MPm-Ts-hpw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -391,6 +391,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="learning" width="25" height="21"/>
+        <image name="test" width="25" height="22"/>
         <image name="x" width="425" height="422"/>
     </resources>
 </document>

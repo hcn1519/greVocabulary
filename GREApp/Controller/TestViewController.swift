@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import RealmSwift
 
 class TestViewController: UIViewController {
+
+    // 여기서 테스트를 시작하기 전 데이터 nil 체크 필요
+    let pageDataSource = PageDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        pageDataSource.setWords(date: nil, isOnlyWrongWords: true)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

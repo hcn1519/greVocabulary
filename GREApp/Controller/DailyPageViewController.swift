@@ -106,14 +106,6 @@ extension DailyPageViewController {
         
         setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
     }
-
-    func goToPreviousPage(){
-        
-        guard let currentViewController = self.viewControllers?.first else { return }
-        guard let previousViewController = dataSource?.pageViewController( self, viewControllerBefore: currentViewController ) else { return }
-
-        setViewControllers([previousViewController], direction: .reverse, animated: true, completion: nil)
-    }
     
     func removeSwipeGesture(){
         for view in self.view.subviews {
