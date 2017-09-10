@@ -24,7 +24,6 @@ class DailyCoverViewController: UIViewController {
         
         titleLabel.text = "Learning Day \(date!)"
 
-
     }
 
     override func viewWillAppear(_ animated: Bool) {

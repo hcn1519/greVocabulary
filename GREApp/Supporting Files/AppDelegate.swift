@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func generateDay() {
 
-        for i in 1...3 {
+        for i in 1...50 {
             let day = Day()
             day.dayId = i
             day.isFinished = false
@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func parseWordCSV(){
 
         // csv파일 경로 설정
-        let path = Bundle.main.path(forResource: "testVocas", ofType: "csv")!
+        let path = Bundle.main.path(forResource: "grevocas_ver1", ofType: "csv")!
 
         do {
             // csv 파일 읽기
@@ -74,6 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     realm.add(word)
                 }
             }
+            print(realm.objects(Word.self))
             
         } catch let err as NSError {
             print(err.debugDescription)

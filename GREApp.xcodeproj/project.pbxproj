@@ -10,12 +10,12 @@
 		66489E12349EFD255C97E03B /* Pods_GREApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511E08A106344B238FD4DC9 /* Pods_GREApp.framework */; };
 		6C8C89A4E7CF43CB5F7C3941 /* Pods_GREAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE44B75C4356D1F971A3140A /* Pods_GREAppTests.framework */; };
 		7E08B8861F5BCE3E000624A8 /* testVocas.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E08B8851F5BCE3E000624A8 /* testVocas.csv */; };
-		7E08B8881F5BE754000624A8 /* testDays.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E08B8871F5BE754000624A8 /* testDays.csv */; };
 		7E0C4F5F1F6522E800BFBDF6 /* SettingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C4F5E1F6522E800BFBDF6 /* SettingListViewController.swift */; };
 		7E0C4F611F652C9500BFBDF6 /* SettingMyTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C4F601F652C9500BFBDF6 /* SettingMyTalkViewController.swift */; };
 		7E0C4F661F653C2B00BFBDF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0C4F651F653C2B00BFBDF6 /* Main.storyboard */; };
 		7E0C4F681F653C5500BFBDF6 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0C4F671F653C5500BFBDF6 /* Settings.storyboard */; };
 		7E0C4F6A1F653C6200BFBDF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0C4F691F653C6200BFBDF6 /* LaunchScreen.storyboard */; };
+		7E0C4F791F656BEC00BFBDF6 /* grevocas_ver1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E0C4F781F656BEC00BFBDF6 /* grevocas_ver1.csv */; };
 		7E0C7BCE1F5DAC6700280721 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C7BCD1F5DAC6700280721 /* TestViewController.swift */; };
 		7E0C7BD01F5DBC9300280721 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C7BCF1F5DBC9300280721 /* Test.swift */; };
 		7E0C7BD21F5DC20600280721 /* PageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C7BD11F5DC20600280721 /* PageDataSource.swift */; };
@@ -50,12 +50,12 @@
 		62343752966643BC368C99DC /* Pods-GREAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GREAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GREAppTests/Pods-GREAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		7511E08A106344B238FD4DC9 /* Pods_GREApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GREApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E08B8851F5BCE3E000624A8 /* testVocas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testVocas.csv; sourceTree = "<group>"; };
-		7E08B8871F5BE754000624A8 /* testDays.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testDays.csv; sourceTree = "<group>"; };
 		7E0C4F5E1F6522E800BFBDF6 /* SettingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingListViewController.swift; sourceTree = "<group>"; };
 		7E0C4F601F652C9500BFBDF6 /* SettingMyTalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingMyTalkViewController.swift; sourceTree = "<group>"; };
 		7E0C4F651F653C2B00BFBDF6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7E0C4F671F653C5500BFBDF6 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		7E0C4F691F653C6200BFBDF6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E0C4F781F656BEC00BFBDF6 /* grevocas_ver1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grevocas_ver1.csv; sourceTree = "<group>"; };
 		7E0C7BCD1F5DAC6700280721 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		7E0C7BCF1F5DBC9300280721 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		7E0C7BD11F5DC20600280721 /* PageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDataSource.swift; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 		7EE1096D1F2CAE9D00920C50 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7E08B8871F5BE754000624A8 /* testDays.csv */,
+				7E0C4F781F656BEC00BFBDF6 /* grevocas_ver1.csv */,
 				7E08B8851F5BCE3E000624A8 /* testVocas.csv */,
 				7E35C8D41F1B4A2E00AE4092 /* Assets.xcassets */,
 			);
@@ -339,9 +339,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E08B8881F5BE754000624A8 /* testDays.csv in Resources */,
 				7E35C8D51F1B4A2E00AE4092 /* Assets.xcassets in Resources */,
 				7E0C4F681F653C5500BFBDF6 /* Settings.storyboard in Resources */,
+				7E0C4F791F656BEC00BFBDF6 /* grevocas_ver1.csv in Resources */,
 				7E0C4F6A1F653C6200BFBDF6 /* LaunchScreen.storyboard in Resources */,
 				7E0C4F661F653C2B00BFBDF6 /* Main.storyboard in Resources */,
 				7E08B8861F5BCE3E000624A8 /* testVocas.csv in Resources */,

@@ -28,6 +28,9 @@ class PageDataSource {
         if let date = date {
             // 배우는용
             words = realm.objects(Word.self).filter("dayId == %d", date)
+
+            print(words)
+            
         } else {
             // 테스트용
             guard let wrongWords = isOnlyWrongWords else { return }
