@@ -22,6 +22,8 @@ class DailyViewController: UIViewController {
         super.viewDidLoad()
 
         days = realm.objects(Day.self)
+
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 78/255, green: 186/255, blue: 74/255, alpha: 1.0)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -65,10 +67,4 @@ extension DailyViewController: UICollectionViewDelegate {
             }
         }
     }
-}
-
-// MARK: test 데이터 생성
-extension DailyViewController {
-    
-    
 }

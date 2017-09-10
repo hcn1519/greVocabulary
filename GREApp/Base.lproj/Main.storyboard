@@ -32,7 +32,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4ro-2d-JHu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.8666666666666667" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z4D-30-vMD">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -55,7 +55,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.97254901960784312" green="0.80000000000000004" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.92941176470588238" green="0.5607843137254902" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="jiw-bH-Oym" firstAttribute="centerY" secondItem="LRk-k7-oFd" secondAttribute="centerY" id="alk-6W-hRZ"/>
                                             <constraint firstItem="jiw-bH-Oym" firstAttribute="centerX" secondItem="LRk-k7-oFd" secondAttribute="centerX" id="jdH-zl-4lN"/>
@@ -115,7 +115,7 @@
                                         <rect key="frame" x="37.5" y="38.5" width="59" height="32"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="시작하기">
-                                            <color key="titleColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.30588235294117649" green="0.72941176470588232" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="beu-02-FO5" kind="presentation" identifier="dayStartSegue" id="uGb-86-Azc"/>
@@ -172,22 +172,22 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abalone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTG-b9-mTn">
-                                <rect key="frame" x="32" y="302.5" width="311" height="31.5"/>
+                                <rect key="frame" x="32" y="302" width="311" height="31.5"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화면을 탭하면 뜻이 나옵니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QS-kg-zwp">
-                                <rect key="frame" x="32" y="341.5" width="311" height="17.5"/>
+                                <rect key="frame" x="32" y="341" width="311" height="17.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3K0-0n-uGo">
-                                <rect key="frame" x="24" y="512" width="327" height="0.0"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3K0-0n-uGo">
+                                <rect key="frame" x="24" y="512" width="327" height="30"/>
                                 <subviews>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-At-c68">
-                                        <rect key="frame" x="-24" y="-542" width="0.0" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-At-c68">
+                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="아는 단어에요">
                                             <color key="titleColor" red="0.16078431369999999" green="0.38431372549999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -196,8 +196,8 @@
                                             <action selector="alreadyKnowBtnTapped:" destination="6Dz-Am-fzp" eventType="touchUpInside" id="gwU-F0-J6C"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHw-7e-DMK">
-                                        <rect key="frame" x="-24" y="-542" width="0.0" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHw-7e-DMK">
+                                        <rect key="frame" x="163.5" y="0.0" width="163.5" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="모르는 단어에요">
                                             <color key="titleColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -227,6 +227,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="3K0-0n-uGo" secondAttribute="trailing" constant="8" id="Dkd-sP-Isp"/>
                             <constraint firstItem="3K0-0n-uGo" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="8" id="Fb0-ga-5xo"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="HG8-UW-b3v"/>
+                            <constraint firstItem="3K0-0n-uGo" firstAttribute="top" secondItem="wuv-m3-fhD" secondAttribute="top" constant="512" id="JGA-n1-wPN"/>
                             <constraint firstItem="c0u-rg-FAl" firstAttribute="top" secondItem="HuF-lM-oHh" secondAttribute="bottom" id="SJ6-Vz-yyU"/>
                             <constraint firstItem="hc1-VM-VB5" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leading" constant="16" id="THT-PH-9rs"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerY" secondItem="wuv-m3-fhD" secondAttribute="centerY" constant="-16" id="aa3-sa-Zll"/>
@@ -268,10 +269,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.30588235289999999" green="0.72941176470000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.30588235294117649" green="0.72941176470588232" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="HqU-mJ-qAi" kind="relationship" relationship="viewControllers" id="zHz-Wv-gQ0"/>
-                        <segue destination="7LW-fW-KAe" kind="relationship" relationship="viewControllers" id="lTH-gC-xVW"/>
+                        <segue destination="E4v-Ue-vIe" kind="relationship" relationship="viewControllers" id="S6X-SK-q1f"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Vn-Ub-7X5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -341,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MoS-8W-Rfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517.60000000000002" y="483.50824587706148"/>
+            <point key="canvasLocation" x="556" y="404"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="jgE-Yd-cP4">
@@ -349,7 +356,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2T8-Tk-OMh" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bj1-Za-7sI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1495" y="484"/>
+            <point key="canvasLocation" x="1532" y="404"/>
         </scene>
         <!--Learning-->
         <scene sceneID="kaH-JG-KPR">
@@ -357,9 +364,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HqU-mJ-qAi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Learning" image="learning" id="z33-UI-WGc"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dY4-s8-1rd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dY4-s8-1rd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.30588235289999999" green="0.72941176470000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -376,9 +386,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7LW-fW-KAe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Test" image="test" id="tP3-Wo-YTQ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MPm-Ts-hpw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="MPm-Ts-hpw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.30588235289999999" green="0.72941176470000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -387,11 +400,41 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bl-Ta-Zkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-391.19999999999999" y="483.50824587706148"/>
+            <point key="canvasLocation" x="-353" y="404"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="ckL-L3-zwE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E4v-Ue-vIe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="06l-Rt-CFc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T7y-A8-yBX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dkV-7p-Rjn" kind="relationship" relationship="rootViewController" id="j3u-i7-LJH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVr-dp-CW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-586.39999999999998" y="1205.8470764617691"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="iQU-Uq-THn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="dkV-7p-Rjn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zV0-qm-A64"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sZ-Iz-7zD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352.80000000000001" y="1205.8470764617691"/>
         </scene>
     </scenes>
     <resources>
         <image name="learning" width="25" height="21"/>
+        <image name="settings" width="26" height="28"/>
         <image name="test" width="25" height="22"/>
         <image name="x" width="425" height="422"/>
     </resources>

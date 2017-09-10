@@ -23,7 +23,7 @@ class DailyLearnCell: UICollectionViewCell {
         self.titleLabel.text = "Day \(day.dayId)"
 
         if day.isFinished {
-            layer.backgroundColor = UIColor(red: 41/255, green: 98/255, blue: 255/255, alpha: 1.0).cgColor
+            layer.backgroundColor = UIColor(red: 237/255, green: 143/255, blue: 84/255, alpha: 1.0).cgColor
         } else {
             layer.backgroundColor = UIColor(red: 248/255, green: 204/255, blue: 180/255, alpha: 1.0).cgColor
         }
