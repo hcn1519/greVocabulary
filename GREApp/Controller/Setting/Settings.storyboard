@@ -53,16 +53,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="개발자의 말" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wcR-03-dHd">
-                                                    <rect key="frame" x="15" y="5" width="78" height="20.5"/>
+                                                    <rect key="frame" x="15" y="7" width="69.5" height="17.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="읽어도 그만.. 안 읽어도 그만.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qnm-7q-ZdW">
-                                                    <rect key="frame" x="15" y="25.5" width="142" height="14.5"/>
+                                                    <rect key="frame" x="15" y="24.5" width="141" height="14"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -125,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVL-zx-Qxf">
-                                <rect key="frame" x="16" y="249.5" width="343" height="169"/>
+                                <rect key="frame" x="16" y="253.5" width="568" height="93.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="안녕하세요">
                                         <attributes>
@@ -863,7 +863,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created By: Changnam Hong, Designed By: Jeongyun Choi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlG-pl-XUK">
-                                <rect key="frame" x="16" y="596" width="343" height="14"/>
+                                <rect key="frame" x="16" y="529" width="568" height="14"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
