@@ -34,6 +34,16 @@ class GREAppTests: XCTestCase {
         word.meaning = "전복"
         
     }
+
+    func testTest() {
+        let test = Test()
+
+        test.createDate
+        test.rightAnswer
+        test.problemCount
+
+        
+    }
 //    func testUser() {
 //        let user = UserDefaults.standard.object(forKey: <#T##String#>)
 //    }

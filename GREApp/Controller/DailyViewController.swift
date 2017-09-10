@@ -22,6 +22,8 @@ class DailyViewController: UIViewController {
         super.viewDidLoad()
 
         days = realm.objects(Day.self)
+
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 78/255, green: 186/255, blue: 74/255, alpha: 1.0)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -39,13 +41,11 @@ extension DailyViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: dailyCellId, for: indexPath) as! DailyTestCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: dailyCellId, for: indexPath) as! DailyLearnCell
 
         let item = days[indexPath.row]
 
-        print(item.isFinished)
         cell.configureCell(day: item)
-
 
         return cell
     }
@@ -67,10 +67,4 @@ extension DailyViewController: UICollectionViewDelegate {
             }
         }
     }
-}
-
-// MARK: test 데이터 생성
-extension DailyViewController {
-    
-    
 }
