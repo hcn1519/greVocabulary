@@ -53,7 +53,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
             // 각 row 별로 데이터를 위에 만들어 놓은 array에 append
             for row in rows {
-                guard let dayId = Int(row["dayId"]!) else { return }
+
+                let idOfDay = row["dayId"]?.replacingOccurrences(of: " ", with: "")
+
+                guard let dayId = Int(idOfDay!) else { return }
                 guard let wordId = Int(row["wordId"]!) else { return }
                 guard let title = row["title"] else { return }
                 guard let meaning = row["meaning"] else { return }

@@ -43,7 +43,7 @@ class DailyDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        currentWord = realm.object(ofType: Word.self, forPrimaryKey: pageIndex)
+//        currentWord = realm.object(ofType: Word.self, forPrimaryKey: pageIndex)
 
         if let word = currentWord {
             titleLabel.text = "\(word.title)"
@@ -119,20 +119,21 @@ class DailyDetailViewController: UIViewController {
             }, completion: nil)
             
             backgroundShouldChange = false
-        }
 
-        if let controller = controllerType {
-            switch controller {
-            case ControllerType.dailyPage:
-                alreadyKnowButton.titleLabel?.text = "아는 단어에요."
-                notAlreadyKnowButton.titleLabel?.text = "모르는 단어에요."
-            case ControllerType.testPage:
-                alreadyKnowButton.titleLabel?.text = "맞췄어요."
-                notAlreadyKnowButton.titleLabel?.text = "틀렸어요."
+
+            if let controller = controllerType {
+                switch controller {
+                case ControllerType.dailyPage:
+                    alreadyKnowButton.titleLabel?.text = "아는 단어에요."
+                    notAlreadyKnowButton.titleLabel?.text = "모르는 단어에요."
+                case ControllerType.testPage:
+                    alreadyKnowButton.titleLabel?.text = "맞췄어요."
+                    notAlreadyKnowButton.titleLabel?.text = "틀렸어요."
+                }
             }
+            alreadyKnowButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
+            notAlreadyKnowButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
         }
-        alreadyKnowButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
-        notAlreadyKnowButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
     }
 
     @IBAction func alreadyKnowBtnTapped(_ sender: UIButton) {

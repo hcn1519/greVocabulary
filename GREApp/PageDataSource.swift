@@ -12,7 +12,6 @@ import RealmSwift
 class PageDataSource {
     private let realm = try! Realm()
     private var words: Results<Word>!
-    private var date: Int?
     private var today: Day?
 
     init() {}
@@ -27,9 +26,9 @@ class PageDataSource {
     func setWords(date: Int?, isOnlyWrongWords: Bool?) {
         if let date = date {
             // 배우는용
-            words = realm.objects(Word.self).filter("dayId == %d", date)
+            words = realm.objects(Word.self).filter("dayId == \(date)")
 
-            print(words)
+            print(words.first)
             
         } else {
             // 테스트용

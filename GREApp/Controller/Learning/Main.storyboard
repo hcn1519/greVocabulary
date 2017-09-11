@@ -37,11 +37,11 @@
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dailyCellId" id="LRk-k7-oFd" customClass="DailyLearnCell" customModule="GREApp" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="100" height="100"/>
+                                        <rect key="frame" x="15" y="15" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -68,16 +68,15 @@
                                 <connections>
                                     <outlet property="dataSource" destination="CQb-9n-xpW" id="869-Xk-zB2"/>
                                     <outlet property="delegate" destination="CQb-9n-xpW" id="UBY-Ov-vvP"/>
-                                    <outlet property="prefetchDataSource" destination="CQb-9n-xpW" id="JI0-dE-9HJ"/>
                                 </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="4ro-2d-JHu" secondAttribute="bottom" id="15n-rk-kgt"/>
-                            <constraint firstItem="4ro-2d-JHu" firstAttribute="top" secondItem="s0o-vi-PSS" secondAttribute="top" id="Bud-ky-J3u"/>
+                            <constraint firstAttribute="bottom" secondItem="4ro-2d-JHu" secondAttribute="bottom" id="J0C-Pm-8QZ"/>
                             <constraint firstAttribute="trailing" secondItem="4ro-2d-JHu" secondAttribute="trailing" id="NIV-Im-khZ"/>
                             <constraint firstItem="4ro-2d-JHu" firstAttribute="leading" secondItem="s0o-vi-PSS" secondAttribute="leading" id="ViG-kH-C2Z"/>
+                            <constraint firstItem="4ro-2d-JHu" firstAttribute="top" secondItem="s0o-vi-PSS" secondAttribute="top" id="q7K-me-4Ff"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XKj-Rh-rl4"/>
@@ -88,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OaA-MS-zJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311" y="-288"/>
+            <point key="canvasLocation" x="309.60000000000002" y="-288.30584707646182"/>
         </scene>
         <!--Daily Cover View Controller-->
         <scene sceneID="3lI-ij-onu">
@@ -207,6 +206,9 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="UHw-7e-DMK" firstAttribute="width" secondItem="YeW-At-c68" secondAttribute="width" id="8cH-PN-kEX"/>
+                                </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuF-lM-oHh">
                                 <rect key="frame" x="-3" y="657" width="240" height="10"/>
@@ -364,7 +366,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HqU-mJ-qAi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Learning" image="learning" id="z33-UI-WGc"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dY4-s8-1rd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dY4-s8-1rd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -386,7 +388,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7LW-fW-KAe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Test" image="test" id="tP3-Wo-YTQ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="MPm-Ts-hpw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MPm-Ts-hpw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">

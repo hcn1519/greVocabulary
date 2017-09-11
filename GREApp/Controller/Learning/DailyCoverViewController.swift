@@ -39,6 +39,7 @@ class DailyCoverViewController: UIViewController {
                     stackView.addArrangedSubview(label)
 
                     dayStartBtn.setTitle("굳이 또 하기", for: .normal)
+                    dayStartBtn.setTitleColor(UIColor(red: 237/255, green: 143/255, blue: 84/255, alpha: 1.0), for: .normal)
                 } else {
                     dayStartBtn.setTitle("시작하기", for: .normal)
                 }
