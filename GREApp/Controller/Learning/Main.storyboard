@@ -182,34 +182,20 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3K0-0n-uGo">
-                                <rect key="frame" x="24" y="512" width="327" height="30"/>
-                                <subviews>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-At-c68">
-                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="30"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                        <state key="normal" title="아는 단어에요">
-                                            <color key="titleColor" red="0.16078431369999999" green="0.38431372549999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="alreadyKnowBtnTapped:" destination="6Dz-Am-fzp" eventType="touchUpInside" id="gwU-F0-J6C"/>
-                                        </connections>
-                                    </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHw-7e-DMK">
-                                        <rect key="frame" x="163.5" y="0.0" width="163.5" height="30"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                        <state key="normal" title="모르는 단어에요">
-                                            <color key="titleColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="notAlreadyKnowBtnTapped:" destination="6Dz-Am-fzp" eventType="touchUpInside" id="9u5-qW-NrH"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-At-c68">
+                                <rect key="frame" x="32" y="453" width="147.5" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="UHw-7e-DMK" firstAttribute="width" secondItem="YeW-At-c68" secondAttribute="width" id="8cH-PN-kEX"/>
+                                    <constraint firstAttribute="height" constant="44" id="wPl-Aa-CdP"/>
                                 </constraints>
-                            </stackView>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="아는 단어에요">
+                                    <color key="titleColor" red="0.16078431369999999" green="0.38431372549999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="alreadyKnowBtnTapped:" destination="6Dz-Am-fzp" eventType="touchUpInside" id="gwU-F0-J6C"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuF-lM-oHh">
                                 <rect key="frame" x="-3" y="657" width="240" height="10"/>
                                 <color key="backgroundColor" red="0.11764705882352941" green="0.53333333333333333" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
@@ -218,6 +204,17 @@
                                     <constraint firstAttribute="width" constant="240" id="thv-Jb-pQ7"/>
                                 </constraints>
                             </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHw-7e-DMK">
+                                <rect key="frame" x="195.5" y="453" width="147.5" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="모르는 단어에요">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="notAlreadyKnowBtnTapped:" destination="6Dz-Am-fzp" eventType="touchUpInside" id="9u5-qW-NrH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -225,18 +222,21 @@
                             <constraint firstItem="0QS-kg-zwp" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="1gU-vp-QXF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eTG-b9-mTn" secondAttribute="trailing" constant="16" id="4Vn-uW-2gf"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="16" id="5c1-Oh-k0U"/>
+                            <constraint firstItem="HuF-lM-oHh" firstAttribute="top" secondItem="YeW-At-c68" secondAttribute="bottom" constant="160" id="8jR-11-7FA"/>
+                            <constraint firstItem="UHw-7e-DMK" firstAttribute="height" secondItem="YeW-At-c68" secondAttribute="height" id="99Y-OU-3wl"/>
                             <constraint firstItem="0QS-kg-zwp" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="16" id="9lM-ss-lUl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3K0-0n-uGo" secondAttribute="trailing" constant="8" id="Dkd-sP-Isp"/>
-                            <constraint firstItem="3K0-0n-uGo" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="8" id="Fb0-ga-5xo"/>
+                            <constraint firstItem="UHw-7e-DMK" firstAttribute="width" secondItem="YeW-At-c68" secondAttribute="width" id="Bnk-9F-Ac8"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="HG8-UW-b3v"/>
-                            <constraint firstItem="3K0-0n-uGo" firstAttribute="top" secondItem="wuv-m3-fhD" secondAttribute="top" constant="512" id="JGA-n1-wPN"/>
+                            <constraint firstItem="YeW-At-c68" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="16" id="KAF-gL-3Wf"/>
                             <constraint firstItem="c0u-rg-FAl" firstAttribute="top" secondItem="HuF-lM-oHh" secondAttribute="bottom" id="SJ6-Vz-yyU"/>
                             <constraint firstItem="hc1-VM-VB5" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leading" constant="16" id="THT-PH-9rs"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerY" secondItem="wuv-m3-fhD" secondAttribute="centerY" constant="-16" id="aa3-sa-Zll"/>
                             <constraint firstItem="hc1-VM-VB5" firstAttribute="top" secondItem="qCg-of-1TX" secondAttribute="bottom" constant="16" id="ehs-Hh-ecM"/>
+                            <constraint firstItem="UHw-7e-DMK" firstAttribute="bottom" secondItem="YeW-At-c68" secondAttribute="bottom" id="iZd-y5-3OD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UHw-7e-DMK" secondAttribute="trailing" constant="16" id="l8C-3g-5Wf"/>
                             <constraint firstItem="0QS-kg-zwp" firstAttribute="centerY" secondItem="wuv-m3-fhD" secondAttribute="centerY" constant="16" id="ljG-3T-9fg"/>
                             <constraint firstItem="HuF-lM-oHh" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leading" constant="-3" id="stQ-ed-GIz"/>
-                            <constraint firstItem="HuF-lM-oHh" firstAttribute="top" secondItem="3K0-0n-uGo" secondAttribute="bottom" constant="115" id="sy7-m2-axm"/>
+                            <constraint firstItem="UHw-7e-DMK" firstAttribute="leading" secondItem="YeW-At-c68" secondAttribute="trailing" constant="16" id="vdP-FB-BnF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0QS-kg-zwp" secondAttribute="trailing" constant="16" id="zaS-oj-xku"/>
                         </constraints>
                         <connections>
@@ -245,7 +245,7 @@
                     </view>
                     <connections>
                         <outlet property="alreadyKnowButton" destination="YeW-At-c68" id="oRZ-5x-AxC"/>
-                        <outlet property="btnBottomConstraint" destination="sy7-m2-axm" id="vaT-eQ-K32"/>
+                        <outlet property="btnBottomBarConstraint" destination="8jR-11-7FA" id="n7k-3F-pNt"/>
                         <outlet property="meaningLabel" destination="0QS-kg-zwp" id="KiS-xd-Z09"/>
                         <outlet property="notAlreadyKnowButton" destination="UHw-7e-DMK" id="2bU-UR-fk5"/>
                         <outlet property="progressBar" destination="HuF-lM-oHh" id="kpr-m9-pKg"/>
@@ -261,7 +261,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2753" y="153"/>
+            <point key="canvasLocation" x="2752.8000000000002" y="152.47376311844079"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Yt-IG-S2r">

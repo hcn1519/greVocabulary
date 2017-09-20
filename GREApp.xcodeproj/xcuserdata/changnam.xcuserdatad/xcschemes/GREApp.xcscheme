@@ -38,6 +38,16 @@
                ReferencedContainer = "container:GREApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7EF8B5211F6647FA00109E29"
+               BuildableName = "GREAppUITests.xctest"
+               BlueprintName = "GREAppUITests"
+               ReferencedContainer = "container:GREApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

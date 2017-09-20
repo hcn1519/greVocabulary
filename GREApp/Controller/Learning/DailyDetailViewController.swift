@@ -37,8 +37,8 @@ class DailyDetailViewController: UIViewController {
     @IBOutlet weak var notAlreadyKnowButton: UIButton!
     @IBOutlet weak var progressBar: UIView!
 
-    @IBOutlet weak var btnBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var progressBarWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var btnBottomBarConstraint: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +67,7 @@ class DailyDetailViewController: UIViewController {
     override func updateViewConstraints() {
         super.updateViewConstraints()
 
-        btnBottomConstraint.constant = self.view.bounds.height / 5
+        btnBottomBarConstraint.constant = self.view.bounds.height / 5
         progressBarWidthConstraint.constant = (self.view.bounds.width / 30) * CGFloat(pageIndex + 1)
     }
 
@@ -101,7 +101,8 @@ class DailyDetailViewController: UIViewController {
     
     // 뜻 보여주기
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
-        
+        print("background tap")
+
         if backgroundShouldChange {
 
             if let word = currentWord {
@@ -109,17 +110,9 @@ class DailyDetailViewController: UIViewController {
             }
             meaningLabel.font = UIFont(name: "Helvetica Neue", size: 15)
             meaningLabel.textColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1.0)
-            
-            alreadyKnowButton.isHidden = false
-            notAlreadyKnowButton.isHidden = false
-            
-            UIView.transition(with: self.view, duration: 0.25, options: .transitionCrossDissolve, animations: {
-                [weak self] in
-                self?.view.layoutIfNeeded()
-            }, completion: nil)
-            
-            backgroundShouldChange = false
 
+            alreadyKnowButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
+            notAlreadyKnowButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
 
             if let controller = controllerType {
                 switch controller {
@@ -131,8 +124,24 @@ class DailyDetailViewController: UIViewController {
                     notAlreadyKnowButton.titleLabel?.text = "틀렸어요."
                 }
             }
-            alreadyKnowButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
-            notAlreadyKnowButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
+
+            alreadyKnowButton.isHidden = false
+            notAlreadyKnowButton.isHidden = false
+
+            UIView.setAnimationsEnabled(false)
+
+            self.alreadyKnowButton.setNeedsLayout()
+            self.notAlreadyKnowButton.setNeedsLayout()
+
+            UIView.transition(with: self.view, duration: 0.25, options: .transitionCrossDissolve, animations: {
+                [weak self] in
+                self?.view.layoutIfNeeded()
+            }, completion: nil)
+
+            UIView.setAnimationsEnabled(true)
+
+            backgroundShouldChange = false
+
         }
     }
 

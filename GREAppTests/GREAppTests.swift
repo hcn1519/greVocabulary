@@ -22,30 +22,4 @@ class GREAppTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testWord() {
-        let ad = UIApplication.shared.delegate as? AppDelegate
-        let context = ad?.persistentContainer.viewContext
-        
-        let word = Word(context: context!)
-        
-        word.wordId = 1
-        word.title = "abalone"
-        word.meaning = "전복"
-        
-    }
-
-    func testTest() {
-        let test = Test()
-
-        test.createDate
-        test.rightAnswer
-        test.problemCount
-
-        
-    }
-//    func testUser() {
-//        let user = UserDefaults.standard.object(forKey: <#T##String#>)
-//    }
-    
 }
