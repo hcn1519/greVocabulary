@@ -10,9 +10,9 @@ import Foundation
 import RealmSwift
 
 class Day: Object {
-    dynamic var dayId = 0
-    dynamic var isFinished = false
-    dynamic var finishedDate: Date? = Date()
+    @objc dynamic var dayId = 0
+    @objc dynamic var isFinished = false
+    @objc dynamic var finishedDate: Date? = Date()
 
     override class func primaryKey() -> String? {
         return "dayId"
