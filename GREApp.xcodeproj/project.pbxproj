@@ -28,6 +28,9 @@
 		7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */; };
 		7E35C9281F1B6F2000AE4092 /* DailyCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9271F1B6F2000AE4092 /* DailyCoverViewController.swift */; };
 		7E35C92A1F1B6FB300AE4092 /* DailyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9291F1B6FB300AE4092 /* DailyPageViewController.swift */; };
+		7ECCCC6F214002220081B680 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECCCC6E214002220081B680 /* List.storyboard */; };
+		7ECCCC71214002450081B680 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCCC70214002450081B680 /* WordListViewController.swift */; };
+		7ECCCC73214005C10081B680 /* WordListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCCC72214005C10081B680 /* WordListCell.swift */; };
 		7ED62BC31F5C5FB6001E81E9 /* DailyLearnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED62BC21F5C5FB6001E81E9 /* DailyLearnCell.swift */; };
 		7ED778321F5D5A6600B1A2A5 /* TestPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED778311F5D5A6600B1A2A5 /* TestPageViewController.swift */; };
 		7EE109521F2C7E8B00920C50 /* GREAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109511F2C7E8B00920C50 /* GREAppTests.swift */; };
@@ -79,6 +82,9 @@
 		7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		7E35C9271F1B6F2000AE4092 /* DailyCoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCoverViewController.swift; sourceTree = "<group>"; };
 		7E35C9291F1B6FB300AE4092 /* DailyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPageViewController.swift; sourceTree = "<group>"; };
+		7ECCCC6E214002220081B680 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		7ECCCC70214002450081B680 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
+		7ECCCC72214005C10081B680 /* WordListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListCell.swift; sourceTree = "<group>"; };
 		7ED62BC21F5C5FB6001E81E9 /* DailyLearnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyLearnCell.swift; sourceTree = "<group>"; };
 		7ED778311F5D5A6600B1A2A5 /* TestPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPageViewController.swift; sourceTree = "<group>"; };
 		7EE1094F1F2C7E8B00920C50 /* GREAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GREAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +195,7 @@
 		7E35C8E11F1B4C8C00AE4092 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7ECCCC6D214002010081B680 /* List */,
 				7E0C4F621F653A0300BFBDF6 /* Learning */,
 				7E0C4F631F653A1100BFBDF6 /* Test */,
 				7E0C4F641F653A1800BFBDF6 /* Setting */,
@@ -200,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				7ED62BC21F5C5FB6001E81E9 /* DailyLearnCell.swift */,
+				7ECCCC72214005C10081B680 /* WordListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,6 +231,15 @@
 				7E35C8D11F1B4A2E00AE4092 /* GREApp.xcdatamodeld */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7ECCCC6D214002010081B680 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				7ECCCC6E214002220081B680 /* List.storyboard */,
+				7ECCCC70214002450081B680 /* WordListViewController.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		7EE109501F2C7E8B00920C50 /* GREAppTests */ = {
@@ -395,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E35C8D51F1B4A2E00AE4092 /* Assets.xcassets in Resources */,
+				7ECCCC6F214002220081B680 /* List.storyboard in Resources */,
 				7E0C4F681F653C5500BFBDF6 /* Settings.storyboard in Resources */,
 				7E0C4F791F656BEC00BFBDF6 /* grevocas_ver1.csv in Resources */,
 				7E0C4F6A1F653C6200BFBDF6 /* LaunchScreen.storyboard in Resources */,
@@ -488,9 +506,11 @@
 				7ED62BC31F5C5FB6001E81E9 /* DailyLearnCell.swift in Sources */,
 				7E35C8CD1F1B4A2E00AE4092 /* DailyDetailViewController.swift in Sources */,
 				7E0C7BD21F5DC20600280721 /* PageDataSource.swift in Sources */,
+				7ECCCC71214002450081B680 /* WordListViewController.swift in Sources */,
 				7E242D7D1F5ABF9E004C1BCE /* Word.swift in Sources */,
 				7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */,
 				7ED778321F5D5A6600B1A2A5 /* TestPageViewController.swift in Sources */,
+				7ECCCC73214005C10081B680 /* WordListCell.swift in Sources */,
 				7E0C7BD01F5DBC9300280721 /* Test.swift in Sources */,
 				7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */,
 				7E35C9281F1B6F2000AE4092 /* DailyCoverViewController.swift in Sources */,

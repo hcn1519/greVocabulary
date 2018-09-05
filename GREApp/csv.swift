@@ -88,8 +88,6 @@ open class CSV {
 
             let newValues = escapeDoubleQuotesComma(values: values)
 
-            print(newValues)
-
             for (index, header) in self.headers.enumerated() {
                 if index < values.count {
                     row[header] = newValues[index]

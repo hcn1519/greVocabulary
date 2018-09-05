@@ -11,7 +11,7 @@ import RealmSwift
 
 class PageDataSource {
     private let realm = try! Realm()
-    private var words: Results<Word>!
+    private(set) var words: Results<Word>!
     private var today: Day?
 
     private(set) var testWords: [Word] = []
@@ -25,7 +25,12 @@ class PageDataSource {
         return self.today
     }
 
-    func setWords(date: Int?, isOnlyWrongWords: Bool?) {
+    func setWords(date: Int?, isOnlyWrongWords: Bool?, isListing: Bool? = nil) {
+        if let _ = isListing {
+            words = realm.objects(Word.self).filter("alreadyKnow == %@", false)
+            return
+        }
+
         if let date = date {
             // 배우는용
             words = realm.objects(Word.self).filter("dayId == \(date)")
@@ -34,11 +39,11 @@ class PageDataSource {
             // 단어 테스트용
             guard let wrongWords = isOnlyWrongWords else { return }
 
-            let rawWords = wrongWords ? realm.objects(Word.self).filter("alreadyKnow == %@", false) : realm.objects(Word.self)
+            let rawWords = wrongWords ? realm.objects(Word.self).filter("alreadyKnow == %@", false) :
+                realm.objects(Word.self).filter("correctCount != 0 OR wrongCount != 0")
 
             if let notKnowWords = getLimitedWords(words: rawWords, limit: 30) {
                 testWords = notKnowWords
-                print(testWords)
             }
         }
     }
@@ -50,7 +55,6 @@ class PageDataSource {
     }
 
     func getLimitedWords(words rawWords: Results<Word>, limit: Int) -> [Word]? {
-//        let rawWords = realm.objects(Word.self).filter("alreadyKnow == %@", false)
 
         if rawWords.count == 0 {
             return nil
@@ -62,6 +66,38 @@ class PageDataSource {
 
         return indexSet.compactMap { index in
             return rawWords[index]
+        }
+    }
+
+    func updateWords(completion: @escaping () -> Void) {
+        guard UserDefaults.standard.object(forKey: "isTestDataUpdated") != nil else {
+            completion()
+            return
+        }
+
+        let finishedDay = realm.objects(Day.self).filter("isFinished == %@", true)
+
+        var totalCount = 0
+        finishedDay.forEach { day in
+            let objectList = realm.objects(Word.self).filter("dayId == %@", day.dayId)
+            totalCount += objectList.count
+        }
+
+        var finishCount = 0
+        finishedDay.forEach { day in
+
+            let objectList = realm.objects(Word.self).filter("dayId == %@", day.dayId)
+
+            try! realm.write {
+                objectList.forEach {
+                    $0.correctCount += 1
+                    finishCount += 1
+                    if finishCount == totalCount {
+                        UserDefaults.standard.set(true, forKey: "isTestDataUpdated")
+                        completion()
+                    }
+                }
+            }
         }
     }
 

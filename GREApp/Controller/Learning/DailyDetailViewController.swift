@@ -102,7 +102,6 @@ class DailyDetailViewController: UIViewController {
     
     // 뜻 보여주기
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
-        print("background tap")
 
         if backgroundShouldChange {
 
@@ -152,6 +151,7 @@ class DailyDetailViewController: UIViewController {
             switch controller {
             case ControllerType.dailyPage:
                 saveScore(isKnow: true)
+                saveCorrectCount(isKnow: true)
                 if let dvc = parentController as? DailyPageViewController {
                     dvc.goToNextPage()
                 }
@@ -161,15 +161,15 @@ class DailyDetailViewController: UIViewController {
                 }
             }
         }
-
     }
+
     // 모르는 단어에요 클릭
     @IBAction func notAlreadyKnowBtnTapped(_ sender: UIButton) {
-
         if let controller = controllerType {
             switch controller {
             case ControllerType.dailyPage:
                 saveScore(isKnow: false)
+                saveCorrectCount(isKnow: false)
                 if let dvc = parentController as? DailyPageViewController {
                     dvc.goToNextPage()
                 }
@@ -179,13 +179,24 @@ class DailyDetailViewController: UIViewController {
                 }
             }
         }
-
     }
 
     func saveScore(isKnow: Bool) {
         if let word = currentWord {
             try! realm.write {
                 word.alreadyKnow = isKnow
+            }
+        }
+    }
+
+    func saveCorrectCount(isKnow: Bool) {
+        if let word = currentWord {
+            try! realm.write {
+                if isKnow {
+                    word.correctCount += 1
+                } else {
+                    word.wrongCount += 1
+                }
             }
         }
     }

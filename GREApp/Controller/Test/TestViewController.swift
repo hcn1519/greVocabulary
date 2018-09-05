@@ -21,19 +21,38 @@ class TestViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "testStartSegue" {
             if let destination = segue.destination as? TestPageViewController {
-                if let isOnlyWrongWords = sender as? Bool {
-                    pageDataSource.setWords(date: nil, isOnlyWrongWords: isOnlyWrongWords)
-                    destination.pageDataSource = pageDataSource
-                }
+                destination.pageDataSource = pageDataSource
             }
         }
     }
 
     @IBAction func testAllWordsTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "testStartSegue", sender: false)
+        pageDataSource.updateWords { [weak self] in
+            guard let `self` = self else { return }
+
+            self.pageDataSource.setWords(date: nil, isOnlyWrongWords: false)
+            if self.pageDataSource.testWords.count != 0 {
+                self.performSegue(withIdentifier: "testStartSegue", sender: false)
+            } else {
+
+                let alert: UIAlertController = UIAlertController(title: "단어 부족",
+                                                                 message: "공부를 완료한 단어가 없어요.", preferredStyle: .alert)
+
+                let ok = UIAlertAction(title: "OK", style: .default, handler: {_ in
+                    self.dismiss(animated: true) {
+                        self.navigationController?.popToRootViewController(animated: true)
+                    }
+                })
+
+                alert.addAction(ok)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+
     }
 
     @IBAction func testWrongWordTapped(_ sender: UIButton) {
+        pageDataSource.setWords(date: nil, isOnlyWrongWords: true)
         performSegue(withIdentifier: "testStartSegue", sender: true)
     }
 
