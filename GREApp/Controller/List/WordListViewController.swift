@@ -12,6 +12,7 @@ class WordListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
     let pageDataSource = PageDataSource()
 
     override func viewDidLoad() {
@@ -19,6 +20,11 @@ class WordListViewController: UIViewController {
 
         pageDataSource.setWords(date: nil, isOnlyWrongWords: true, isListing: true)
         tableView.dataSource = self
+
+        if #available(iOS 11, *) {
+        } else {
+            topConstraint.constant = -60
+        }
     }
 }
 

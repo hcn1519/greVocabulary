@@ -70,7 +70,7 @@ class PageDataSource {
     }
 
     func updateWords(completion: @escaping () -> Void) {
-        guard UserDefaults.standard.object(forKey: "isTestDataUpdated") != nil else {
+        guard UserDefaults.standard.object(forKey: "isTestDataUpdated") == nil else {
             completion()
             return
         }

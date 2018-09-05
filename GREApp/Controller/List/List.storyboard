@@ -96,6 +96,7 @@
                     <navigationItem key="navigationItem" title="모르는 단어" id="iV0-ms-RmM"/>
                     <connections>
                         <outlet property="tableView" destination="et0-pA-rna" id="YQB-sO-eiE"/>
+                        <outlet property="topConstraint" destination="nVy-PU-lyq" id="8Io-Lp-NKX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0a-WV-16Y" userLabel="First Responder" sceneMemberID="firstResponder"/>

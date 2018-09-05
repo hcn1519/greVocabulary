@@ -53,22 +53,7 @@ extension TestPageViewController: UIPageViewControllerDataSource {
                 test.createDate = Date()
             }
 
-            let alert: UIAlertController = UIAlertController(title: "메인 화면으로", message: "테스트를 완료하였습니다.", preferredStyle: .alert)
-
-            let ok = UIAlertAction(title: "OK", style: .default, handler: {_ in
-
-                self.dismiss(animated: true) {
-                    self.navigationController?.popToRootViewController(animated: true)
-                }
-
-            })
-
-            alert.addAction(ok)
-
-            self.present(alert, animated: true, completion: nil)
-
             return nil
-
         }
 
         return getViewControllerAtIndex(index: index)
@@ -98,7 +83,20 @@ extension TestPageViewController {
     func goToNextPage(){
 
         guard let currentViewController = self.viewControllers?.first else { return }
-        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else { return }
+        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else {
+            let alert: UIAlertController = UIAlertController(title: "수고했어오", message: "정진 하새오🐧", preferredStyle: .alert)
+
+            let ok = UIAlertAction(title: "OK", style: .default, handler: {_ in
+
+                self.dismiss(animated: true) {
+                    self.navigationController?.popToRootViewController(animated: true)
+                }
+            })
+
+            alert.addAction(ok)
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
 
         setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
     }

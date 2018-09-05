@@ -16,13 +16,20 @@ class DailyViewController: UIViewController {
     let realm = try! Realm()
 
     @IBOutlet weak var collectionView: UICollectionView!
-
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         days = realm.objects(Day.self)
 
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.3058823529, green: 0.7294117647, blue: 0.2901960784, alpha: 1)
+
+        if #available(iOS 11, *) {
+
+        } else {
+            topConstraint.constant = -60
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {

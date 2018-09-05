@@ -141,7 +141,6 @@ class DailyDetailViewController: UIViewController {
             UIView.setAnimationsEnabled(true)
 
             backgroundShouldChange = false
-
         }
     }
 
