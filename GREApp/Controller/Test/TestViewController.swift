@@ -16,16 +16,21 @@ class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        pageDataSource.setWords(date: nil, isOnlyWrongWords: true)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "testStartSegue" {
             if let destination = segue.destination as? TestPageViewController {
-                destination.pageDataSource = pageDataSource
+                if let isOnlyWrongWords = sender as? Bool {
+                    pageDataSource.setWords(date: nil, isOnlyWrongWords: isOnlyWrongWords)
+                    destination.pageDataSource = pageDataSource
+                }
             }
         }
+    }
+
+    @IBAction func testAllWordsTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "testStartSegue", sender: false)
     }
 
     @IBAction func testWrongWordTapped(_ sender: UIButton) {

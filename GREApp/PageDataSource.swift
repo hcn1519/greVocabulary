@@ -34,12 +34,11 @@ class PageDataSource {
             // 단어 테스트용
             guard let wrongWords = isOnlyWrongWords else { return }
 
-            if wrongWords {
-                // 모르는 단어만
-                if let notKnowWords = getLimitedWords(limit: 30) {
-                    testWords = notKnowWords
-                    print(testWords)
-                }
+            let rawWords = wrongWords ? realm.objects(Word.self).filter("alreadyKnow == %@", false) : realm.objects(Word.self)
+
+            if let notKnowWords = getLimitedWords(words: rawWords, limit: 30) {
+                testWords = notKnowWords
+                print(testWords)
             }
         }
     }
@@ -50,8 +49,8 @@ class PageDataSource {
         }
     }
 
-    func getLimitedWords(limit: Int) -> [Word]? {
-        let rawWords = realm.objects(Word.self).filter("alreadyKnow == %@", false)
+    func getLimitedWords(words rawWords: Results<Word>, limit: Int) -> [Word]? {
+//        let rawWords = realm.objects(Word.self).filter("alreadyKnow == %@", false)
 
         if rawWords.count == 0 {
             return nil

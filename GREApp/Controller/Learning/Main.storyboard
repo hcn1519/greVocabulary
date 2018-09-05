@@ -301,7 +301,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7zX-rU-P3r">
-                                <rect key="frame" x="86.999999999999986" y="368.33333333333331" width="201.66666666666663" height="75.333333333333314"/>
+                                <rect key="frame" x="86.999999999999986" y="350.33333333333331" width="201.66666666666663" height="111.33333333333331"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="테스트 범위를 선택하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSI-Jp-DkQ">
                                         <rect key="frame" x="0.0" y="0.0" width="201.66666666666666" height="23.333333333333332"/>
@@ -310,16 +310,26 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EAa-NL-nEA">
-                                        <rect key="frame" x="5.3333333333333286" y="43.333333333333371" width="191" height="32"/>
+                                        <rect key="frame" x="5.3333333333333286" y="43.333333333333371" width="191" height="68"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcO-R0-XjE">
-                                                <rect key="frame" x="0.0" y="0.0" width="191" height="32"/>
+                                                <rect key="frame" x="39.000000000000014" y="0.0" width="112.99999999999999" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="공부한 모든 단어">
+                                                    <color key="titleColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="testAllWordsTapped:" destination="W4Y-OI-6c1" eventType="touchUpInside" id="lY9-DH-Yxm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8by-cD-GgE">
+                                                <rect key="frame" x="0.0" y="36" width="191" height="32"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="공부는 했는데... 모르는 단어">
                                                     <color key="titleColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="testWrongWordTapped:" destination="W4Y-OI-6c1" eventType="touchUpInside" id="rBD-iL-Opj"/>
+                                                    <action selector="testWrongWordTapped:" destination="W4Y-OI-6c1" eventType="touchUpInside" id="8bL-7l-47c"/>
                                                 </connections>
                                             </button>
                                         </subviews>
