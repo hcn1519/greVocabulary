@@ -13,13 +13,10 @@ class TestPageViewController: UIPageViewController {
 
     let realm = try! Realm()
 
-    let pageDataSource = PageDataSource()
-    var isOnlyWrongWords: Bool?
+    var pageDataSource: PageDataSource?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        pageDataSource.setWords(date: nil, isOnlyWrongWords: isOnlyWrongWords!)
 
         self.dataSource = self
         self.setViewControllers([getViewControllerAtIndex(index: 0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
@@ -48,7 +45,7 @@ extension TestPageViewController: UIPageViewControllerDataSource {
             return nil
         }
         index += 1
-        if (index == pageDataSource.getWords?.count) {
+        if (index == pageDataSource?.testWords.count) {
 
             let test = Test()
 
@@ -56,22 +53,7 @@ extension TestPageViewController: UIPageViewControllerDataSource {
                 test.createDate = Date()
             }
 
-            let alert: UIAlertController = UIAlertController(title: "메인 화면으로", message: "테스트를 완료하였습니다.", preferredStyle: .alert)
-
-            let ok = UIAlertAction(title: "OK", style: .default, handler: {_ in
-
-                self.dismiss(animated: true) {
-                    self.navigationController?.popToRootViewController(animated: true)
-                }
-
-            })
-
-            alert.addAction(ok)
-
-            self.present(alert, animated: true, completion: nil)
-
             return nil
-
         }
 
         return getViewControllerAtIndex(index: index)
@@ -86,10 +68,10 @@ extension TestPageViewController: UIPageViewControllerDataSource {
         pageContentViewController.pageIndex = index
         pageContentViewController.controllerType = ControllerType.testPage
 
-        if let words = pageDataSource.getWords {
+        if let words = pageDataSource?.testWords {
             pageContentViewController.currentWord = words[indexPath.row]
         }
-        
+
         pageContentViewController.parentController = self
         
         return pageContentViewController
@@ -101,7 +83,20 @@ extension TestPageViewController {
     func goToNextPage(){
 
         guard let currentViewController = self.viewControllers?.first else { return }
-        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else { return }
+        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else {
+            let alert: UIAlertController = UIAlertController(title: "수고했어오", message: "정진 하새오🐧", preferredStyle: .alert)
+
+            let ok = UIAlertAction(title: "OK", style: .default, handler: {_ in
+
+                self.dismiss(animated: true) {
+                    self.navigationController?.popToRootViewController(animated: true)
+                }
+            })
+
+            alert.addAction(ok)
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
 
         setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
     }

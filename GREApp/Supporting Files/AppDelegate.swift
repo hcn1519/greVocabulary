@@ -77,8 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     realm.add(word)
                 }
             }
-            print(realm.objects(Word.self))
-            
+        
         } catch let err as NSError {
             print(err.debugDescription)
         }

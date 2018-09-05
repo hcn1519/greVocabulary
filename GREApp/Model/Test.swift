@@ -10,10 +10,10 @@ import Foundation
 import RealmSwift
 
 class Test: Object {
-    dynamic var testId = 0
-    dynamic var problemCount = 0
-    dynamic var rightAnswer = 0
-    dynamic var createDate: Date? = Date()
+    @objc dynamic var testId = 0
+    @objc dynamic var problemCount = 0
+    @objc dynamic var rightAnswer = 0
+    @objc dynamic var createDate: Date? = Date()
 
     override class func primaryKey() -> String? {
         return "testId"

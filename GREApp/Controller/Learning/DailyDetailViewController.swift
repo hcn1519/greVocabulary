@@ -15,6 +15,7 @@ enum ControllerType {
     case testPage
 }
 
+/// 배우는 페이지
 class DailyDetailViewController: UIViewController {
 
     let realm = try! Realm()
@@ -27,9 +28,9 @@ class DailyDetailViewController: UIViewController {
 
     var controllerType: ControllerType?
 
-    let color30 = UIColor(red: 144/255, green: 202/255, blue: 249/255, alpha: 1.0)
-    let color60 = UIColor(red: 66/255, green: 165/255, blue: 245/255, alpha: 1.0)
-    let color90 = UIColor(red: 30/255, green: 136/255, blue: 229/255, alpha: 1.0)
+    let color30 = #colorLiteral(red: 0.5647058824, green: 0.7921568627, blue: 0.9764705882, alpha: 1)
+    let color60 = #colorLiteral(red: 0.2588235294, green: 0.6470588235, blue: 0.9607843137, alpha: 1)
+    let color90 = #colorLiteral(red: 0.1176470588, green: 0.5333333333, blue: 0.8980392157, alpha: 1)
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var meaningLabel: UILabel!
@@ -101,7 +102,6 @@ class DailyDetailViewController: UIViewController {
     
     // 뜻 보여주기
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
-        print("background tap")
 
         if backgroundShouldChange {
 
@@ -141,7 +141,6 @@ class DailyDetailViewController: UIViewController {
             UIView.setAnimationsEnabled(true)
 
             backgroundShouldChange = false
-
         }
     }
 
@@ -151,6 +150,7 @@ class DailyDetailViewController: UIViewController {
             switch controller {
             case ControllerType.dailyPage:
                 saveScore(isKnow: true)
+                saveCorrectCount(isKnow: true)
                 if let dvc = parentController as? DailyPageViewController {
                     dvc.goToNextPage()
                 }
@@ -160,15 +160,15 @@ class DailyDetailViewController: UIViewController {
                 }
             }
         }
-
     }
 
+    // 모르는 단어에요 클릭
     @IBAction func notAlreadyKnowBtnTapped(_ sender: UIButton) {
-
         if let controller = controllerType {
             switch controller {
             case ControllerType.dailyPage:
                 saveScore(isKnow: false)
+                saveCorrectCount(isKnow: false)
                 if let dvc = parentController as? DailyPageViewController {
                     dvc.goToNextPage()
                 }
@@ -178,13 +178,24 @@ class DailyDetailViewController: UIViewController {
                 }
             }
         }
-
     }
 
     func saveScore(isKnow: Bool) {
         if let word = currentWord {
             try! realm.write {
                 word.alreadyKnow = isKnow
+            }
+        }
+    }
+
+    func saveCorrectCount(isKnow: Bool) {
+        if let word = currentWord {
+            try! realm.write {
+                if isKnow {
+                    word.correctCount += 1
+                } else {
+                    word.wrongCount += 1
+                }
             }
         }
     }

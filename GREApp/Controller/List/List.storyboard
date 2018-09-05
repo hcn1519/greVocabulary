@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aaC-dj-Tu7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+        <array key="TimesNewRomanBold.ttf">
+            <string>TimesNewRomanPS-BoldMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--모르는 단어-->
+        <scene sceneID="fgd-5u-nAu">
+            <objects>
+                <viewController id="bce-M0-ZHR" customClass="WordListViewController" customModule="GREApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mTv-7J-bMF"/>
+                        <viewControllerLayoutGuide type="bottom" id="tDa-Ch-yxK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vzF-ng-SRj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="et0-pA-rna">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="70" id="QTR-D8-ned" customClass="WordListCell" customModule="GREApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QTR-D8-ned" id="4O2-pc-SnN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pun-7i-gjO">
+                                                    <rect key="frame" x="16" y="24" width="343" height="22.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1242" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaG-sp-vEo">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="22.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="QGu-fl-pgM"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abalone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kak-ys-STL">
+                                                            <rect key="frame" x="40" y="0.0" width="151.5" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="포기하다" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yDL-Rl-oym">
+                                                            <rect key="frame" x="191.5" y="0.0" width="151.5" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="yDL-Rl-oym" firstAttribute="width" secondItem="kak-ys-STL" secondAttribute="width" id="kdK-gx-sjh"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pun-7i-gjO" firstAttribute="leading" secondItem="4O2-pc-SnN" secondAttribute="leading" constant="16" id="Cpj-wg-eoy"/>
+                                                <constraint firstAttribute="trailing" secondItem="pun-7i-gjO" secondAttribute="trailing" constant="16" id="Jim-3N-QTG"/>
+                                                <constraint firstItem="pun-7i-gjO" firstAttribute="centerY" secondItem="4O2-pc-SnN" secondAttribute="centerY" id="NRF-hh-QBo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="TaG-sp-vEo" id="Exd-9s-7tV"/>
+                                            <outlet property="meaningLabel" destination="yDL-Rl-oym" id="IFr-vI-tdj"/>
+                                            <outlet property="wordLabel" destination="kak-ys-STL" id="2em-84-XJj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="et0-pA-rna" firstAttribute="leading" secondItem="vzF-ng-SRj" secondAttribute="leading" id="9Au-QA-89v"/>
+                            <constraint firstAttribute="bottom" secondItem="et0-pA-rna" secondAttribute="bottom" id="T1e-cz-76f"/>
+                            <constraint firstAttribute="trailing" secondItem="et0-pA-rna" secondAttribute="trailing" id="VAt-al-m0S"/>
+                            <constraint firstItem="et0-pA-rna" firstAttribute="top" secondItem="mTv-7J-bMF" secondAttribute="bottom" id="nVy-PU-lyq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="모르는 단어" id="iV0-ms-RmM"/>
+                    <connections>
+                        <outlet property="tableView" destination="et0-pA-rna" id="YQB-sO-eiE"/>
+                        <outlet property="topConstraint" destination="nVy-PU-lyq" id="8Io-Lp-NKX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p0a-WV-16Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="1239.1304347826087"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="LIb-h5-saR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aaC-dj-Tu7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" image="List" id="KAu-39-Pxd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FvO-gX-xir">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bce-M0-ZHR" kind="relationship" relationship="rootViewController" id="jfJ-r4-mhi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R27-Ag-AXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="1240"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="List" width="30" height="30"/>
+    </resources>
+</document>

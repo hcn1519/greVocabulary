@@ -28,6 +28,9 @@
 		7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */; };
 		7E35C9281F1B6F2000AE4092 /* DailyCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9271F1B6F2000AE4092 /* DailyCoverViewController.swift */; };
 		7E35C92A1F1B6FB300AE4092 /* DailyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E35C9291F1B6FB300AE4092 /* DailyPageViewController.swift */; };
+		7ECCCC6F214002220081B680 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECCCC6E214002220081B680 /* List.storyboard */; };
+		7ECCCC71214002450081B680 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCCC70214002450081B680 /* WordListViewController.swift */; };
+		7ECCCC73214005C10081B680 /* WordListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCCC72214005C10081B680 /* WordListCell.swift */; };
 		7ED62BC31F5C5FB6001E81E9 /* DailyLearnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED62BC21F5C5FB6001E81E9 /* DailyLearnCell.swift */; };
 		7ED778321F5D5A6600B1A2A5 /* TestPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED778311F5D5A6600B1A2A5 /* TestPageViewController.swift */; };
 		7EE109521F2C7E8B00920C50 /* GREAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE109511F2C7E8B00920C50 /* GREAppTests.swift */; };
@@ -79,6 +82,9 @@
 		7E35C8DF1F1B4C7A00AE4092 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		7E35C9271F1B6F2000AE4092 /* DailyCoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCoverViewController.swift; sourceTree = "<group>"; };
 		7E35C9291F1B6FB300AE4092 /* DailyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPageViewController.swift; sourceTree = "<group>"; };
+		7ECCCC6E214002220081B680 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		7ECCCC70214002450081B680 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
+		7ECCCC72214005C10081B680 /* WordListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListCell.swift; sourceTree = "<group>"; };
 		7ED62BC21F5C5FB6001E81E9 /* DailyLearnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyLearnCell.swift; sourceTree = "<group>"; };
 		7ED778311F5D5A6600B1A2A5 /* TestPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPageViewController.swift; sourceTree = "<group>"; };
 		7EE1094F1F2C7E8B00920C50 /* GREAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GREAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +195,7 @@
 		7E35C8E11F1B4C8C00AE4092 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7ECCCC6D214002010081B680 /* List */,
 				7E0C4F621F653A0300BFBDF6 /* Learning */,
 				7E0C4F631F653A1100BFBDF6 /* Test */,
 				7E0C4F641F653A1800BFBDF6 /* Setting */,
@@ -200,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				7ED62BC21F5C5FB6001E81E9 /* DailyLearnCell.swift */,
+				7ECCCC72214005C10081B680 /* WordListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,6 +231,15 @@
 				7E35C8D11F1B4A2E00AE4092 /* GREApp.xcdatamodeld */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7ECCCC6D214002010081B680 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				7ECCCC6E214002220081B680 /* List.storyboard */,
+				7ECCCC70214002450081B680 /* WordListViewController.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		7EE109501F2C7E8B00920C50 /* GREAppTests */ = {
@@ -295,7 +312,6 @@
 				7E35C8C41F1B4A2E00AE4092 /* Frameworks */,
 				7E35C8C51F1B4A2E00AE4092 /* Resources */,
 				CC1B2696113530FC7AD4C322 /* [CP] Embed Pods Frameworks */,
-				E3E5B123B5F35A7A18EC6527 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,8 +330,6 @@
 				7EE1094B1F2C7E8B00920C50 /* Sources */,
 				7EE1094C1F2C7E8B00920C50 /* Frameworks */,
 				7EE1094D1F2C7E8B00920C50 /* Resources */,
-				6B28079D9322AE1C536AFAF9 /* [CP] Embed Pods Frameworks */,
-				FAD3DF9F067A18CAD235E6C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,7 +366,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "홍창남";
 				TargetAttributes = {
 					7E35C8C61F1B4A2E00AE4092 = {
@@ -360,11 +374,13 @@
 					};
 					7EE1094E1F2C7E8B00920C50 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7E35C8C61F1B4A2E00AE4092;
 					};
 					7EF8B5211F6647FA00109E29 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7E35C8C61F1B4A2E00AE4092;
 					};
@@ -396,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E35C8D51F1B4A2E00AE4092 /* Assets.xcassets in Resources */,
+				7ECCCC6F214002220081B680 /* List.storyboard in Resources */,
 				7E0C4F681F653C5500BFBDF6 /* Settings.storyboard in Resources */,
 				7E0C4F791F656BEC00BFBDF6 /* grevocas_ver1.csv in Resources */,
 				7E0C4F6A1F653C6200BFBDF6 /* LaunchScreen.storyboard in Resources */,
@@ -421,21 +438,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6B28079D9322AE1C536AFAF9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GREAppTests/Pods-GREAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		86E87DDD7587F71E8E82440E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,21 +476,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GREApp/Pods-GREApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E3E5B123B5F35A7A18EC6527 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GREApp/Pods-GREApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F24A75C2B9F90A53DC764CBA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,21 +494,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FAD3DF9F067A18CAD235E6C0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GREAppTests/Pods-GREAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -534,9 +506,11 @@
 				7ED62BC31F5C5FB6001E81E9 /* DailyLearnCell.swift in Sources */,
 				7E35C8CD1F1B4A2E00AE4092 /* DailyDetailViewController.swift in Sources */,
 				7E0C7BD21F5DC20600280721 /* PageDataSource.swift in Sources */,
+				7ECCCC71214002450081B680 /* WordListViewController.swift in Sources */,
 				7E242D7D1F5ABF9E004C1BCE /* Word.swift in Sources */,
 				7E35C8CB1F1B4A2E00AE4092 /* AppDelegate.swift in Sources */,
 				7ED778321F5D5A6600B1A2A5 /* TestPageViewController.swift in Sources */,
+				7ECCCC73214005C10081B680 /* WordListCell.swift in Sources */,
 				7E0C7BD01F5DBC9300280721 /* Test.swift in Sources */,
 				7E35C8E01F1B4C7A00AE4092 /* DailyViewController.swift in Sources */,
 				7E35C9281F1B6F2000AE4092 /* DailyCoverViewController.swift in Sources */,
@@ -595,12 +569,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -650,12 +628,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -695,7 +677,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -711,7 +693,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -730,7 +712,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GREApp.app/GREApp";
 			};
 			name = Debug;
@@ -749,7 +732,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GREApp.app/GREApp";
 			};
 			name = Release;
@@ -766,7 +750,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = GREApp;
 			};
 			name = Debug;
@@ -783,7 +768,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.GREAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = GREApp;
 			};
 			name = Release;

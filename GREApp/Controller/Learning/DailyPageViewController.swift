@@ -22,8 +22,6 @@ class DailyPageViewController: UIPageViewController {
         pageDataSource.setWords(date: date!, isOnlyWrongWords: nil)
         pageDataSource.setToday(date: date!)
 
-        print(pageDataSource.getWords?.count)
-
         self.dataSource = self
         self.setViewControllers([getViewControllerAtIndex(index: 0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         
@@ -60,20 +58,6 @@ extension DailyPageViewController: UIPageViewControllerDataSource {
                     today.finishedDate = Date()
                     today.isFinished = true
                 }
-
-                let alert: UIAlertController = UIAlertController(title: "메인 화면으로", message: "오늘의 단어를 완료하였습니다.", preferredStyle: .alert)
-
-                let ok = UIAlertAction(title: "OK", style: .default, handler: {_ in
-
-                    self.dismiss(animated: true) {
-                        self.navigationController?.popToRootViewController(animated: true)
-                    }
-                })
-
-                alert.addAction(ok)
-
-                self.present(alert, animated: true, completion: nil)
-
                 return nil
             }
         }
@@ -104,7 +88,20 @@ extension DailyPageViewController {
     func goToNextPage(){
         
         guard let currentViewController = self.viewControllers?.first else { return }
-        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else { return }
+        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else {
+            let alert: UIAlertController = UIAlertController(title: "메인 화면으로", message: "오늘의 단어를 완료하였습니다.", preferredStyle: .alert)
+
+            let ok = UIAlertAction(title: "OK", style: .default, handler: {_ in
+
+                self.dismiss(animated: true) {
+                    self.navigationController?.popToRootViewController(animated: true)
+                }
+            })
+
+            alert.addAction(ok)
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
         
         setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
     }
