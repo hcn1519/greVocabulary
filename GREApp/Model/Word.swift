@@ -10,6 +10,7 @@ import Foundation
 import RealmSwift
 
 class Word: Object {
+
     @objc dynamic var wordId = 0
     @objc dynamic var dayId = 0
     @objc dynamic var title = ""

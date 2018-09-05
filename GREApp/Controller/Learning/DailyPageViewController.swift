@@ -22,8 +22,6 @@ class DailyPageViewController: UIPageViewController {
         pageDataSource.setWords(date: date!, isOnlyWrongWords: nil)
         pageDataSource.setToday(date: date!)
 
-        print(pageDataSource.getWords?.count)
-
         self.dataSource = self
         self.setViewControllers([getViewControllerAtIndex(index: 0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         

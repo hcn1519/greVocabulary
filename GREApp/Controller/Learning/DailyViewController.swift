@@ -22,8 +22,7 @@ class DailyViewController: UIViewController {
 
         days = realm.objects(Day.self)
 
-        self.navigationController?.navigationBar.tintColor = UIColor(red: 78/255, green: 186/255, blue: 74/255, alpha: 1.0)
-
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.3058823529, green: 0.7294117647, blue: 0.2901960784, alpha: 1)
     }
 
     override func viewWillAppear(_ animated: Bool) {

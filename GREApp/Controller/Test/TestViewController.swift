@@ -9,9 +9,9 @@
 import UIKit
 import RealmSwift
 
+/// 테스트 시작 페이지
 class TestViewController: UIViewController {
 
-    // 여기서 테스트를 시작하기 전 데이터 nil 체크 필요
     let pageDataSource = PageDataSource()
 
     override func viewDidLoad() {
@@ -23,15 +23,9 @@ class TestViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "testStartSegue" {
             if let destination = segue.destination as? TestPageViewController {
-                if let onlyWrongWords = sender as? Bool {
-                    destination.isOnlyWrongWords = onlyWrongWords
-                }
+                destination.pageDataSource = pageDataSource
             }
         }
-    }
-
-    @IBAction func testAllWordTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "testStartSegue", sender: false)
     }
 
     @IBAction func testWrongWordTapped(_ sender: UIButton) {

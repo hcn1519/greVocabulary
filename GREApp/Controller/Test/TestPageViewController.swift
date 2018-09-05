@@ -13,13 +13,10 @@ class TestPageViewController: UIPageViewController {
 
     let realm = try! Realm()
 
-    let pageDataSource = PageDataSource()
-    var isOnlyWrongWords: Bool?
+    var pageDataSource: PageDataSource?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        pageDataSource.setWords(date: nil, isOnlyWrongWords: isOnlyWrongWords!)
 
         self.dataSource = self
         self.setViewControllers([getViewControllerAtIndex(index: 0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
@@ -48,7 +45,7 @@ extension TestPageViewController: UIPageViewControllerDataSource {
             return nil
         }
         index += 1
-        if (index == pageDataSource.getWords?.count) {
+        if (index == pageDataSource?.testWords.count) {
 
             let test = Test()
 
@@ -86,10 +83,10 @@ extension TestPageViewController: UIPageViewControllerDataSource {
         pageContentViewController.pageIndex = index
         pageContentViewController.controllerType = ControllerType.testPage
 
-        if let words = pageDataSource.getWords {
+        if let words = pageDataSource?.testWords {
             pageContentViewController.currentWord = words[indexPath.row]
         }
-        
+
         pageContentViewController.parentController = self
         
         return pageContentViewController

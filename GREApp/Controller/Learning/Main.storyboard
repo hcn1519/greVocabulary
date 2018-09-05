@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OQO-Dj-PBd">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OQO-Dj-PBd">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,11 +27,11 @@
                         <viewControllerLayoutGuide type="bottom" id="lDw-UB-nHR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="s0o-vi-PSS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4ro-2d-JHu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z4D-30-vMD">
                                     <size key="itemSize" width="100" height="100"/>
@@ -73,10 +73,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="4ro-2d-JHu" secondAttribute="bottom" id="J0C-Pm-8QZ"/>
-                            <constraint firstAttribute="trailing" secondItem="4ro-2d-JHu" secondAttribute="trailing" id="NIV-Im-khZ"/>
-                            <constraint firstItem="4ro-2d-JHu" firstAttribute="leading" secondItem="s0o-vi-PSS" secondAttribute="leading" id="ViG-kH-C2Z"/>
-                            <constraint firstItem="4ro-2d-JHu" firstAttribute="top" secondItem="s0o-vi-PSS" secondAttribute="top" id="q7K-me-4Ff"/>
+                            <constraint firstItem="4ro-2d-JHu" firstAttribute="top" secondItem="RcQ-N3-SY3" secondAttribute="bottom" id="2hi-gT-gHc"/>
+                            <constraint firstItem="lDw-UB-nHR" firstAttribute="top" secondItem="4ro-2d-JHu" secondAttribute="bottom" id="BOG-W7-pya"/>
+                            <constraint firstItem="4ro-2d-JHu" firstAttribute="leading" secondItem="s0o-vi-PSS" secondAttribute="leading" id="Cbv-Pm-Pxn"/>
+                            <constraint firstAttribute="trailing" secondItem="4ro-2d-JHu" secondAttribute="trailing" id="KPs-iv-N1O"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XKj-Rh-rl4"/>
@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OaA-MS-zJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="309.60000000000002" y="-288.30584707646182"/>
+            <point key="canvasLocation" x="309.60000000000002" y="-288.91625615763547"/>
         </scene>
         <!--Daily Cover View Controller-->
         <scene sceneID="3lI-ij-onu">
@@ -98,20 +98,20 @@
                         <viewControllerLayoutGuide type="bottom" id="BTV-gf-uIV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6d4-Kw-1rb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="B99-eE-FNb">
-                                <rect key="frame" x="121" y="299" width="133.5" height="70.5"/>
+                                <rect key="frame" x="120.99999999999999" y="371" width="133.66666666666663" height="70.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learning Day 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgT-Ba-tdo">
-                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="22.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="133.66666666666666" height="22.333333333333332"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
                                         <color key="textColor" red="0.18431372549019609" green="0.19215686274509802" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqp-C0-dai">
-                                        <rect key="frame" x="37.5" y="38.5" width="59" height="32"/>
+                                        <rect key="frame" x="37.333333333333343" y="38.333333333333314" width="59" height="32"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="시작하기">
                                             <color key="titleColor" red="0.30588235294117649" green="0.72941176470588232" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
@@ -156,34 +156,23 @@
                         <viewControllerLayoutGuide type="bottom" id="c0u-rg-FAl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wuv-m3-fhD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc1-VM-VB5">
-                                <rect key="frame" x="16" y="36" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="86c-hD-jtg"/>
-                                    <constraint firstAttribute="width" constant="30" id="N4k-0e-fyf"/>
-                                </constraints>
-                                <state key="normal" image="x"/>
-                                <connections>
-                                    <action selector="closeBtnTapped:" destination="6Dz-Am-fzp" eventType="touchUpInside" id="6c2-zI-tan"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abalone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTG-b9-mTn">
-                                <rect key="frame" x="32" y="302" width="311" height="31.5"/>
+                                <rect key="frame" x="32" y="374.33333333333331" width="311" height="31.333333333333314"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화면을 탭하면 뜻이 나옵니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QS-kg-zwp">
-                                <rect key="frame" x="32" y="341" width="311" height="17.5"/>
+                                <rect key="frame" x="32" y="413.33333333333331" width="311" height="17.333333333333314"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-At-c68">
-                                <rect key="frame" x="32" y="453" width="147.5" height="44"/>
+                                <rect key="frame" x="32" y="564" width="147.66666666666666" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="wPl-Aa-CdP"/>
@@ -197,7 +186,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuF-lM-oHh">
-                                <rect key="frame" x="-3" y="657" width="240" height="10"/>
+                                <rect key="frame" x="-3" y="768" width="240" height="10"/>
                                 <color key="backgroundColor" red="0.11764705882352941" green="0.53333333333333333" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="7xg-eb-yH3"/>
@@ -205,7 +194,7 @@
                                 </constraints>
                             </view>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHw-7e-DMK">
-                                <rect key="frame" x="195.5" y="453" width="147.5" height="44"/>
+                                <rect key="frame" x="195.66666666666663" y="564" width="147.33333333333337" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="모르는 단어에요">
@@ -215,12 +204,24 @@
                                     <action selector="notAlreadyKnowBtnTapped:" destination="6Dz-Am-fzp" eventType="touchUpInside" id="9u5-qW-NrH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc1-VM-VB5">
+                                <rect key="frame" x="32" y="60" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="NfW-h3-P9a"/>
+                                    <constraint firstAttribute="height" constant="30" id="yxv-Nd-AS0"/>
+                                </constraints>
+                                <state key="normal" image="x"/>
+                                <connections>
+                                    <action selector="closeBtnTapped:" destination="6Dz-Am-fzp" eventType="touchUpInside" id="6c2-zI-tan"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="0QS-kg-zwp" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="1gU-vp-QXF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eTG-b9-mTn" secondAttribute="trailing" constant="16" id="4Vn-uW-2gf"/>
+                            <constraint firstItem="hc1-VM-VB5" firstAttribute="top" secondItem="qCg-of-1TX" secondAttribute="bottom" constant="16" id="5LV-88-KB2"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="16" id="5c1-Oh-k0U"/>
                             <constraint firstItem="HuF-lM-oHh" firstAttribute="top" secondItem="YeW-At-c68" secondAttribute="bottom" constant="160" id="8jR-11-7FA"/>
                             <constraint firstItem="UHw-7e-DMK" firstAttribute="height" secondItem="YeW-At-c68" secondAttribute="height" id="99Y-OU-3wl"/>
@@ -228,10 +229,9 @@
                             <constraint firstItem="UHw-7e-DMK" firstAttribute="width" secondItem="YeW-At-c68" secondAttribute="width" id="Bnk-9F-Ac8"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerX" secondItem="wuv-m3-fhD" secondAttribute="centerX" id="HG8-UW-b3v"/>
                             <constraint firstItem="YeW-At-c68" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="16" id="KAF-gL-3Wf"/>
+                            <constraint firstItem="hc1-VM-VB5" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leadingMargin" constant="16" id="LiG-CE-39q"/>
                             <constraint firstItem="c0u-rg-FAl" firstAttribute="top" secondItem="HuF-lM-oHh" secondAttribute="bottom" id="SJ6-Vz-yyU"/>
-                            <constraint firstItem="hc1-VM-VB5" firstAttribute="leading" secondItem="wuv-m3-fhD" secondAttribute="leading" constant="16" id="THT-PH-9rs"/>
                             <constraint firstItem="eTG-b9-mTn" firstAttribute="centerY" secondItem="wuv-m3-fhD" secondAttribute="centerY" constant="-16" id="aa3-sa-Zll"/>
-                            <constraint firstItem="hc1-VM-VB5" firstAttribute="top" secondItem="qCg-of-1TX" secondAttribute="bottom" constant="16" id="ehs-Hh-ecM"/>
                             <constraint firstItem="UHw-7e-DMK" firstAttribute="bottom" secondItem="YeW-At-c68" secondAttribute="bottom" id="iZd-y5-3OD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UHw-7e-DMK" secondAttribute="trailing" constant="16" id="l8C-3g-5Wf"/>
                             <constraint firstItem="0QS-kg-zwp" firstAttribute="centerY" secondItem="wuv-m3-fhD" secondAttribute="centerY" constant="16" id="ljG-3T-9fg"/>
@@ -280,7 +280,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="HqU-mJ-qAi" kind="relationship" relationship="viewControllers" id="zHz-Wv-gQ0"/>
-                        <segue destination="E4v-Ue-vIe" kind="relationship" relationship="viewControllers" id="S6X-SK-q1f"/>
+                        <segue destination="7LW-fW-KAe" kind="relationship" relationship="viewControllers" id="MAI-0Q-ncv"/>
+                        <segue destination="E4v-Ue-vIe" kind="relationship" relationship="viewControllers" id="gvv-xh-Wva"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Vn-Ub-7X5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -296,33 +297,23 @@
                         <viewControllerLayoutGuide type="bottom" id="ynd-wQ-3yK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WNe-85-7LM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7zX-rU-P3r">
-                                <rect key="frame" x="87" y="278" width="201.5" height="111.5"/>
+                                <rect key="frame" x="86.999999999999986" y="368.33333333333331" width="201.66666666666663" height="75.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="테스트 범위를 선택하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSI-Jp-DkQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="201.5" height="23.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="201.66666666666666" height="23.333333333333332"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EAa-NL-nEA">
-                                        <rect key="frame" x="5.5" y="43.5" width="191" height="68"/>
+                                        <rect key="frame" x="5.3333333333333286" y="43.333333333333371" width="191" height="32"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad2-Yi-gv0">
-                                                <rect key="frame" x="39" y="0.0" width="113" height="32"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="공부한 모든 단어">
-                                                    <color key="titleColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="testAllWordTapped:" destination="W4Y-OI-6c1" eventType="touchUpInside" id="88N-ad-MUf"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcO-R0-XjE">
-                                                <rect key="frame" x="0.0" y="36" width="191" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="32"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="공부는 했는데... 모르는 단어">
                                                     <color key="titleColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -352,10 +343,10 @@
             </objects>
             <point key="canvasLocation" x="556" y="404"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Test Page View Controller-->
         <scene sceneID="jgE-Yd-cP4">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2T8-Tk-OMh" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2T8-Tk-OMh" customClass="TestPageViewController" customModule="GREApp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bj1-Za-7sI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1532" y="404"/>
@@ -367,7 +358,7 @@
                     <tabBarItem key="tabBarItem" title="Learning" image="learning" id="z33-UI-WGc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dY4-s8-1rd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.30588235289999999" green="0.72941176470000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
@@ -389,7 +380,7 @@
                     <tabBarItem key="tabBarItem" title="Test" image="test" id="tP3-Wo-YTQ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MPm-Ts-hpw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.30588235289999999" green="0.72941176470000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
@@ -411,7 +402,7 @@
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="06l-Rt-CFc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T7y-A8-yBX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -14,6 +14,8 @@ class PageDataSource {
     private var words: Results<Word>!
     private var today: Day?
 
+    private(set) var testWords: [Word] = []
+
     init() {}
 
     var getWords: Results<Word>? {
@@ -28,19 +30,16 @@ class PageDataSource {
             // 배우는용
             words = realm.objects(Word.self).filter("dayId == \(date)")
 
-            print(words.first)
-            
         } else {
-            // 테스트용
+            // 단어 테스트용
             guard let wrongWords = isOnlyWrongWords else { return }
 
             if wrongWords {
                 // 모르는 단어만
-                words = realm.objects(Word.self).filter("alreadyKnow == %@", false)
-
-            } else {
-                // 모든 단어 랜덤
-
+                if let notKnowWords = getLimitedWords(limit: 30) {
+                    testWords = notKnowWords
+                    print(testWords)
+                }
             }
         }
     }
@@ -49,5 +48,31 @@ class PageDataSource {
         if let date = date {
             today = realm.object(ofType: Day.self, forPrimaryKey: date)
         }
+    }
+
+    func getLimitedWords(limit: Int) -> [Word]? {
+        let rawWords = realm.objects(Word.self).filter("alreadyKnow == %@", false)
+
+        if rawWords.count == 0 {
+            return nil
+        }
+
+        let testCount = rawWords.count > 30 ? 30 : rawWords.count
+
+        let indexSet = randomIndex(totalCount: rawWords.count, resultCount: testCount)
+
+        return indexSet.compactMap { index in
+            return rawWords[index]
+        }
+    }
+
+    func randomIndex(totalCount: Int, resultCount: Int) -> [Int] {
+        var set = Set<Int>()
+
+        while set.count != resultCount {
+            let index = Int(arc4random_uniform(UInt32(totalCount)))
+            set.insert(index)
+        }
+        return Array(set)
     }
 }
